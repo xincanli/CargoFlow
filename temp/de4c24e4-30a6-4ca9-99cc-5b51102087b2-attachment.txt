@@ -1,0 +1,5 @@
+[32mINFO    [0m BD.log:logger_util.py:51 开始执行用例：订阅BookingOptionRequest类型
+[32mINFO    [0m BD.log:requests_util.py:38 响应状态码: 201
+[35mDEBUG   [0m BD.log:requests_util.py:39 响应内容: 
+[32mINFO    [0m BD.log:logger_util.py:59 用例 订阅BookingOptionRequest类型 执行成功
+[32mINFO    [0m BD.log:logger_util.py:65 执行耗时: 0.127 秒

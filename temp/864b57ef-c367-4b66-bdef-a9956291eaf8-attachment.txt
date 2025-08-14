@@ -1,0 +1,17 @@
+[32mINFO    [0m BD.log:logger_util.py:51 开始执行用例：Airline访问FF
+[32mINFO    [0m BD.log:requests_util.py:38 响应状态码: 200
+[35mDEBUG   [0m BD.log:requests_util.py:39 响应内容: {
+  "@id" : "http://120.55.195.144:8080/",
+  "@type" : "ServerInformation",
+  "hasDataHolder" : {
+    "@id" : "http://120.55.195.144:8080/logistics-objects/_data-holder"
+  },
+  "hasServerEndpoint" : "http://120.55.195.144:8080/",
+  "hasSupportedContentType" : [ "application/turtle", "application/ld+json", "text/turtle" ],
+  "hasSupportedLanguage" : "en-US",
+  "@context" : {
+    "@vocab" : "https://onerecord.iata.org/ns/api#"
+  }
+}
+[32mINFO    [0m BD.log:logger_util.py:59 用例 Airline访问FF 执行成功
+[32mINFO    [0m BD.log:logger_util.py:65 执行耗时: 0.161 秒

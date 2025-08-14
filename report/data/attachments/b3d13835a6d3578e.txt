@@ -1,0 +1,21 @@
+INFO     BD.log:logger_util.py:51 开始执行用例：FF查看BookingOption
+INFO     BD.log:requests_util.py:38 响应状态码: 403
+DEBUG    BD.log:requests_util.py:39 响应内容: {
+  "@graph" : [ {
+    "@id" : "neone:bd4b1da9-3716-4eb6-94ba-8b3570385134",
+    "@type" : "Error",
+    "hasErrorDetail" : {
+      "@id" : "neone:d35f6314-b9ca-4dde-b0a0-1a4a0445a623"
+    },
+    "hasTitle" : "Access Denied"
+  }, {
+    "@id" : "neone:d35f6314-b9ca-4dde-b0a0-1a4a0445a623",
+    "@type" : "ErrorDetail",
+    "hasCode" : "Forbidden",
+    "hasMessage" : "http://120.55.195.144:8080/logistics-objects/fd9497f9-d9e1-4cf7-9e52-7564b0eb42c1 has no access to http://49.235.163.153:8080/logistics-objects/296cff8a-220c-460b-b750-42d3d0a3b86e"
+  } ],
+  "@context" : {
+    "@vocab" : "https://onerecord.iata.org/ns/api#"
+  }
+}
+INFO     BD.log:logger_util.py:65 执行耗时: 0.089 秒

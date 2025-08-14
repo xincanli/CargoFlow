@@ -1,0 +1,17 @@
+INFO     BD.log:logger_util.py:51 开始执行用例：FF访问Airline
+INFO     BD.log:requests_util.py:38 响应状态码: 200
+DEBUG    BD.log:requests_util.py:39 响应内容: {
+  "@id" : "http://49.235.163.153:8080/",
+  "@type" : "ServerInformation",
+  "hasDataHolder" : {
+    "@id" : "http://49.235.163.153:8080/logistics-objects/_data-holder"
+  },
+  "hasServerEndpoint" : "http://49.235.163.153:8080/",
+  "hasSupportedContentType" : [ "application/turtle", "application/ld+json", "text/turtle" ],
+  "hasSupportedLanguage" : "en-US",
+  "@context" : {
+    "@vocab" : "https://onerecord.iata.org/ns/api#"
+  }
+}
+INFO     BD.log:logger_util.py:59 用例 FF访问Airline 执行成功
+INFO     BD.log:logger_util.py:65 执行耗时: 0.097 秒

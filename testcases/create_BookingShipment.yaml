@@ -1,0 +1,713 @@
+#-
+#  name: 创建FF
+#  token_key: FF_token
+#  request:
+#    method: post
+#    url: http://120.55.195.144:8080/logistics-objects?public=<boolean>
+#    data:
+#      '@context':
+#        cargo: https://onerecord.iata.org/ns/cargo#
+#      '@type':
+#        - cargo:Company
+#        - cargo:Organization
+#        - cargo:LogisticsAgent
+#        - cargo:LogisticsObject
+#      cargo:contactPersons:
+#        - '@type':
+#            - cargo:Person
+#            - cargo:Actor
+#            - cargo:LogisticsAgent
+#            - cargo:LogisticsObject
+#          cargo:firstName: Jackie
+#          cargo:lastName: ZUO
+#          cargo:salutation: Mr
+#      cargo:name: IATA
+#      cargo:shortName: IATA
+#    headers:
+#      Accept: application/ld+json
+#      Content-Type: application/ld+json
+#  validate:
+#    status_code: 201
+#
+#-
+#  name: 创建Airline
+#  token_key: Airline_token
+#  request:
+#    method: post
+#    url: http://49.235.163.153:8080/logistics-objects?public=<boolean>
+#    data:
+#      '@context':
+#        cargo: https://onerecord.iata.org/ns/cargo#
+#      '@type':
+#        - cargo:Company
+#        - cargo:Organization
+#        - cargo:LogisticsAgent
+#        - cargo:LogisticsObject
+#      cargo:contactPersons:
+#        - '@type':
+#            - cargo:Person
+#            - cargo:Actor
+#            - cargo:LogisticsAgent
+#            - cargo:LogisticsObject
+#          cargo:firstName: Jackie
+#          cargo:lastName: ZUO
+#          cargo:salutation: Mr
+#      cargo:name: IATA
+#      cargo:shortName: IATA
+#    headers:
+#      Accept: application/ld+json
+#      Content-Type: application/ld+json
+#  validate:
+#    status_code: 201
+
+-
+  name: FF访问Airline
+  token_key: FF_token
+  request:
+    method: get
+    url: http://49.235.163.153:8080
+    headers:
+      Content-Type: application/ld+json
+  validate:
+    status_code: 200
+
+-
+  name: Airline访问FF
+  token_key: Airline_token
+  request:
+    method: get
+    url: http://120.55.195.144:8080
+    headers:
+      Content-Type: application/ld+json
+  validate:
+    status_code: 200
+-
+  name: 创建BookingShipment物流对象
+  token_key: FF_token
+  request:
+    method: post
+    url: http://120.55.195.144:8080/logistics-objects?public=<boolean>
+    data:
+      '@context':
+        cargo: https://onerecord.iata.org/ns/cargo#
+        code: https://onerecord.iata.org/ns/code-lists/
+      '@type': cargo:BookingShipment
+      cargo:chargeableWeight:
+        '@type': cargo:Value
+        cargo:numericalValue:
+          '@type': cargo:http://www.w3.org/2001/XMLSchema#double
+          '@value': 1500
+        cargo:unit:
+          '@id': https://onerecord.iata.org/ns/code-lists/MeasurementUnitCode#KGM
+      cargo:expectedCommodity:
+        '@id': https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_GENE
+        '@type': cargo:CommodityCode
+      cargo:totalDimensions:
+        '@type': cargo:Dimensions
+        cargo:volume:
+          '@type': cargo:Value
+          cargo:numericalValue:
+            '@type': cargo:http://www.w3.org/2001/XMLSchema#double
+            '@value': 9
+          cargo:unit:
+            '@id': https://onerecord.iata.org/ns/code-lists/MeasurementUnitCode#MTQ
+      cargo:totalGrossWeight:
+        '@type': cargo:Value
+        cargo:numericalValue:
+          '@type': cargo:http://www.w3.org/2001/XMLSchema#double
+          '@value': 927
+        cargo:unit:
+          '@id': https://onerecord.iata.org/ns/code-lists/MeasurementUnitCode#KGM
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 201
+
+-
+  name: 订阅BookingOptionRequest类型
+  token_key: Airline_token
+  request:
+    method: post
+    url: http://120.55.195.144:8080/subscriptions
+    data:
+      '@context':
+        api: https://onerecord.iata.org/ns/api#
+        cargo: https://onerecord.iata.org/ns/cargo#
+      '@type': api:Subscription
+      api:hasContentType: application/ld+json
+      api:hasSubscriber:
+        '@id': http://49.235.163.153:8080/logistics-objects/7a270136-cd6d-442a-a988-c2c4c793675e
+      api:hasTopic:
+        '@id': cargo:BookingOptionRequest
+      api:hasTopicType:
+        '@id': api:LOGISTICS_OBJECT_TYPE
+      api:includeSubscriptionEventType:
+        - '@id': api:LOGISTICS_OBJECT_UPDATED
+        - '@id': api:LOGISTICS_OBJECT_CREATED
+        - '@id': api:LOGISTICS_EVENT_RECEIVED
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 201
+
+-
+  name: 创建BookingOptionRequest物流对象
+  token_key: FF_token
+  request:
+    method: post
+    url: http://120.55.195.144:8080/logistics-objects?public=<boolean>
+    data:
+      '@context':
+        cargo: https://onerecord.iata.org/ns/cargo#
+        code: https://onerecord.iata.org/ns/code-lists/
+      '@type': cargo:BookingOptionRequest
+      cargo:bookingOptions:
+        '@id': ''
+      cargo:bookingPreference:
+        '@type': cargo:BookingPreferences
+        cargo:maxSegments:
+          '@type': cargo:http://www.w3.org/2001/XMLSchema#integer
+          '@value': '1'
+        cargo:preferredTransportId: SC2433/18 JUL
+      cargo:bookingShipmentDetails:
+        '@id': ''
+      cargo:bookingToUpdate:
+        '@id': ''
+      cargo:involvedParties:
+        - '@type': cargo:Party
+          cargo:partyDetails:
+            '@type': cargo:Organization
+            cargo:basedAtLocation:
+              '@type': cargo:Location
+              cargo:locationName: KEYUANWEI 3ROAD 2 1
+            cargo:contactPersons:
+              - '@type': cargo:Person
+                cargo:contactDetails:
+                  - '@type': cargo:ContactDetail
+                    cargo:contactDetailType:
+                      '@type': code:ContactDetailType
+                      id: https://onerecord.iata.org/ns/cargo#PHONE_NUMBER
+                    cargo:textualValue: '18661918312'
+            cargo:name: OCS SHANGHAI CO LTD
+          cargo:partyRole:
+            '@id': https://onerecord.iata.org/ns/code-lists/ParticipantIdentifier#SHP
+            '@type': code:ParticipantIdentifier
+        - '@type': cargo:Party
+          cargo:partyDetails:
+            '@type': cargo:Organization
+            cargo:basedAtLocation:
+              '@type': cargo:Location
+              cargo:locationName: 1SENSHU KUKO MINAMI SENNAN
+            cargo:name: OCS SHANGHAI CO LTD
+          cargo:partyRole:
+            '@id': https://onerecord.iata.org/ns/code-lists/ParticipantIdentifier#CNE
+            '@type': code:ParticipantIdentifier
+      cargo:transportLegs:
+        - '@type': cargo:TransportLegs
+          cargo:arrivalDate:
+            '@type': http://www.w3.org/2001/XMLSchema#dateTime
+            '@value': 2025/7/18 7:18:00
+          cargo:arrivalLocation:
+            '@type': cargo:Location
+            cargo:locationName: OSAKA
+          cargo:departureDate:
+            '@type': http://www.w3.org/2001/XMLSchema#dateTime
+            '@value': 2025/7/18
+          cargo:departureLocation:
+            '@type': cargo:Location
+            cargo:locationName: QINGDAO
+          cargo:transportIdentifier: SC2433/18 JUL
+      cargo:unitsPreference:
+        '@type': cargo:UnitsPreference
+        cargo:currency:
+          '@type': code:CurrencyCode
+          '@value': cargo:https://onerecord.iata.org/ns/cargo#CNY
+        cargo:dimensionsUnit:
+          '@type': code:DimensionsUnitCode
+          '@value': cargo:https://onerecord.iata.org/ns/cargo#CMT
+        cargo:volumeUnit:
+          '@type': code:VolumeUnitCode
+          '@value': cargo:https://onerecord.iata.org/ns/cargo#MTQ
+        cargo:weightUnit:
+          '@type': code:WeightUnitCode
+          '@value': cargo:https://onerecord.iata.org/ns/cargo#KGM
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 201
+
+-
+  name: 订阅BookingOption类型
+  token_key: FF_token
+  request:
+    method: post
+    url: http://49.235.163.153:8080/subscriptions
+    data:
+      '@context':
+        api: https://onerecord.iata.org/ns/api#
+        cargo: https://onerecord.iata.org/ns/cargo#
+      '@type': api:Subscription
+      api:hasContentType: application/ld+json
+      api:hasSubscriber:
+        '@id': http://120.55.195.144:8080/logistics-objects/7a270136-cd6d-442a-a988-c2c4c793675e
+      api:hasTopic:
+        '@id': cargo:BookingOption
+      api:hasTopicType:
+        '@id': api:LOGISTICS_OBJECT_TYPE
+      api:includeSubscriptionEventType:
+        - '@id': api:LOGISTICS_OBJECT_UPDATED
+        - '@id': api:LOGISTICS_OBJECT_CREATED
+        - '@id': api:LOGISTICS_EVENT_RECEIVED
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 201
+
+-
+  name: 创建BookingOption物流对象
+  token_key: Airline_token
+  request:
+    method: post
+    url: http://49.235.163.153:8080/logistics-objects?public=false
+    data:
+      '@context':
+        cargo: https://onerecord.iata.org/ns/cargo#
+        code: https://onerecord.iata.org/ns/code-lists/
+      '@type': cargo:BookingOption
+      cargo:additionalInformation: SpaceCode:PUBLIC ApplicationType:2
+      cargo:carrier:
+        '@type': cargo:Carrier
+        cargo:airlineCode: SC
+      cargo:forBookingOptionRequest:
+        '@id': ''
+      cargo:forBookingRequest:
+        '@id': ''
+      cargo:price:
+        '@type': cargo:Price
+        cargo:ratings:
+          - '@type': cargo:Ratings
+            cargo:chargePaymentType:
+              '@id': https://onerecord.iata.org/ns/code-lists/PrepaidCollectIndicator#P
+              '@type': code:PrepaidCollectIndicator
+            cargo:chargeType:
+              '@id': https://onerecord.iata.org/ns/code-lists/ChargeIdentifier#WT
+              '@type': code:ChargeIdentifier
+            cargo:quantity:
+              '@type': cargo:http://www.w3.org/2001/XMLSchema#double
+              '@value': 0
+      cargo:transportLegs:
+        - '@type': cargo:TransportLegs
+          cargo:arrivalDate:
+            '@type': http://www.w3.org/2001/XMLSchema#dateTime
+            '@value': 2025/7/18 7:18:00
+          cargo:arrivalLocation:
+            '@type': cargo:Location
+            cargo:locationName: OSAKA
+          cargo:departureDate:
+            '@type': http://www.w3.org/2001/XMLSchema#dateTime
+            '@value': 2025/7/18
+          cargo:departureLocation:
+            '@type': cargo:Location
+            cargo:locationName: QINGDAO
+          cargo:transportIdentifier: SC2433/18 JUL
+      cargo:unitsPreference:
+        '@type': cargo:UnitsPreference
+        cargo:currency:
+          '@type': code:CurrencyCode
+          '@value': https://vocabulary.uncefact.org/CurrencyCodeList#CNY
+        cargo:dimensionsUnit:
+          '@id': https://onerecord.iata.org/ns/code-lists/MeasurementUnitCode#CMT
+          '@type': code:DimensionsUnitCode
+        cargo:volumeUnit:
+          '@id': https://onerecord.iata.org/ns/code-lists/VolumeUnitCode
+          '@type': code:VolumeUnitCode
+        cargo:weightUnit:
+          '@id': https://onerecord.iata.org/ns/code-lists/MeasurementUnitCode#KGM
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 201
+
+-
+  name: FF查看BookingOption
+  token_key: FF_token
+  request:
+    method: get
+    url: ${BookingOption}
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 403
+
+-
+  name: 向Airline申请权限查看BookingOption
+  token_key: FF_token
+  request:
+    method: post
+    url: http://49.235.163.153:8080/access-delegations
+    data:
+      '@context':
+        api: https://onerecord.iata.org/ns/api#
+        cargo: https://onerecord.iata.org/ns/cargo#
+      '@type': api:AccessDelegation
+      api:hasDescription: Require access to Piece for handling
+      api:hasLogisticsObject:
+        - '@id': ${BookingOption}
+      api:hasPermission:
+        - '@id': api:GET_LOGISTICS_OBJECT
+      api:isRequestedFor:
+        - '@id': http://120.55.195.144:8080/logistics-objects/fd9497f9-d9e1-4cf7-9e52-7564b0eb42c1
+      api:notifyRequestStatusChange: false
+
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 201
+
+-
+  name: FF查看授权statue
+  token_key: FF_token
+  request:
+    method: get
+    url: ${AirlineBookingOption}
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  wait: 0
+  validate:
+    status_code: 200
+
+-
+  name: FF查看BookingOption
+  token_key: FF_token
+  request:
+    method: get
+    url: ${BookingOption}
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  wait: 0
+  validate:
+    status_code: 200
+-
+  name: 订阅BookingRequest类型
+  token_key: Airline_token
+  request:
+    method: post
+    url: http://120.55.195.144:8080/subscriptions
+    data:
+      '@context':
+        api: https://onerecord.iata.org/ns/api#
+        cargo: https://onerecord.iata.org/ns/cargo#
+      '@type': api:Subscription
+      api:hasContentType: application/ld+json
+      api:hasSubscriber:
+        '@id': http://49.235.163.153:8080/logistics-objects/0a96034f-3baa-4688-bbe0-960dd5aaa4ef
+      api:hasTopic:
+        '@id': cargo:BookingRequest
+      api:hasTopicType:
+        '@id': api:LOGISTICS_OBJECT_TYPE
+      api:includeSubscriptionEventType:
+        - '@id': api:LOGISTICS_OBJECT_UPDATED
+        - '@id': api:LOGISTICS_OBJECT_CREATED
+        - '@id': api:LOGISTICS_EVENT_RECEIVED
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 201
+
+-
+  name: 创建BookingRequest物流对象
+  token_key: Airline_token
+  request:
+    method: post
+    url: http://49.235.163.153:8080/logistics-objects?public=<boolean>
+    data:
+      '@context':
+        cargo: https://onerecord.iata.org/ns/cargo#
+        code: https://onerecord.iata.org/ns/code-lists/
+      '@type': cargo:BookingRequest
+      cargo:booking:
+        '@id': ''
+      cargo:forBookingOption:
+        '@id': ''
+      cargo:waybillNumber: 324-04499655
+      cargo:waybillPrefix: '324'
+
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 201
+
+-
+  name: 订阅Booking类型
+  token_key: FF_token
+  request:
+    method: post
+    url: http://49.235.163.153:8080/subscriptions
+    data:
+      '@context':
+        api: https://onerecord.iata.org/ns/api#
+        cargo: https://onerecord.iata.org/ns/cargo#
+      '@type': api:Subscription
+      api:hasContentType: application/ld+json
+      api:hasSubscriber:
+        '@id': http://120.55.195.144:8080/logistics-objects/fd9497f9-d9e1-4cf7-9e52-7564b0eb42c1
+      api:hasTopic:
+        '@id': cargo:Booking
+      api:hasTopicType:
+        '@id': api:LOGISTICS_OBJECT_TYPE
+      api:includeSubscriptionEventType:
+        - '@id': api:LOGISTICS_OBJECT_UPDATED
+        - '@id': api:LOGISTICS_OBJECT_CREATED
+        - '@id': api:LOGISTICS_EVENT_RECEIVED
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 201
+
+-
+  name: 创建Booking物流对象
+  token_key: Airline_token
+  request:
+    method: post
+    url: http://49.235.163.153:8080/logistics-objects?public=<boolean>
+    data:
+      '@context':
+        cargo: https://onerecord.iata.org/ns/cargo#
+        code: https://onerecord.iata.org/ns/code-lists/
+      '@type': cargo:Booking
+      cargo:arrivalLocation:
+        '@type': cargo:Location
+        cargo:locationName: OSAKA
+      cargo:bookingRequest:
+        '@id': ''
+      cargo:bookingSegments:
+        - '@type': cargo:BookingSegment
+          cargo:spaceAllocationCode:
+            '@id': https://onerecord.iata.org/ns/code-lists/SpaceAllocationCode#SS
+            '@type': cargo:SpaceAllocationCode
+      cargo:bookingShipmentDetails:
+        '@id': ''
+      cargo:bookingStatus:
+        '@type': cargo:BookingStatus
+        '@value': https://onerecord.iata.org/ns/cargo#CONFIRMED
+      cargo:bookingTimes: 2025/7/16 3:05:56
+      cargo:carrier:
+        '@type': cargo:Carrier
+        cargo:airlineCode: SC
+      cargo:contactPersons:
+        - '@type': cargo:Person
+          cargo:lastName: SYSTEM
+      cargo:departureLocation:
+        '@type': cargo:Location
+        cargo:locationName: QINGDAO
+      cargo:issuedForWaybill:
+        '@id': ''
+      cargo:transportLegs:
+        - '@type': cargo:TransportLegs
+          cargo:arrivalDate:
+            '@type': http://www.w3.org/2001/XMLSchema#dateTime
+            '@value': 2025/7/18 7:18:00
+          cargo:departureDate:
+            '@type': http://www.w3.org/2001/XMLSchema#dateTime
+            '@value': 2025/7/18
+          cargo:transportIdentifier: SC2433/18 JUL
+      cargo:updateBookingOptionRequests:
+        - '@id': ''
+      cargo:waybillNumber: 324-02820860
+      cargo:waybillPrefix: '324'
+
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 201
+
+-
+  name: 订阅Waybill类型
+  token_key: FF_token
+  request:
+    method: post
+    url: http://120.55.195.144:8080/subscriptions
+    data:
+      '@context':
+        api: https://onerecord.iata.org/ns/api#
+        cargo: https://onerecord.iata.org/ns/cargo#
+      '@type': api:Subscription
+      api:hasContentType: application/ld+json
+      api:hasSubscriber:
+        '@id': http://49.235.163.153:8080/logistics-objects/0a96034f-3baa-4688-bbe0-960dd5aaa4ef
+      api:hasTopic:
+        '@id': cargo:Waybill
+      api:hasTopicType:
+        '@id': api:LOGISTICS_OBJECT_TYPE
+      api:includeSubscriptionEventType:
+        - '@id': api:LOGISTICS_OBJECT_UPDATED
+        - '@id': api:LOGISTICS_OBJECT_CREATED
+        - '@id': api:LOGISTICS_EVENT_RECEIVED
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 201
+
+-
+  name: 创建Waybill物流对象
+  token_key: FF_token
+  request:
+    method: post
+    url: http://120.55.195.144:8080/logistics-objects?public=<boolean>
+    data:
+      '@context':
+        cargo: https://onerecord.iata.org/ns/cargo#
+        code: https://onerecord.iata.org/ns/code-lists/
+      '@type': cargo:Waybill
+      cargo:accountingInformation: 运单修改1次 08700002
+      cargo:arrivalLocation:
+        '@type': cargo:Location
+        cargo:locationCodes:
+          '@type': cargo:CodeListElement
+          cargo:code: KIX
+        cargo:locationName: OSAKA
+      cargo:carrierDeclarationDate:
+        '@type': http://www.w3.org/2001/XMLSchema#dateTime
+        '@value': 2025/7/17
+      cargo:carrierDeclarationPlace:
+        '@type': cargo:Location
+        cargo:locationCodes:
+          - '@type': cargo:CodeListElement
+            cargo:code: TNA
+      cargo:declaredValueForCarriage:
+        '@type': cargo:CurrencyValue
+        cargo:currencyUnit:
+          '@id': https://vocabulary.uncefact.org/CurrencyCodeList#CNY
+          '@type': code:CurrencyCode
+        cargo:numericalValue:
+          '@type': http://www.w3.org/2001/XMLSchema#double
+          '@value': 0
+      cargo:declaredValueForCustoms:
+        '@type': cargo:CurrencyValue
+        cargo:currencyUnit:
+          '@type': code:CurrencyCode
+          '@value': https://vocabulary.uncefact.org/CurrencyCodeList#CNY
+        cargo:numericalValue:
+          '@type': http://www.w3.org/2001/XMLSchema#double
+          '@value': 0
+      cargo:departureLocation:
+        '@type': cargo:Location
+        cargo:locationCodes:
+          '@type': cargo:CodeListElement
+          cargo:code: TAO
+        cargo:locationName: QINGDAO
+      cargo:involvedParties:
+        - '@type': cargo:Party
+          cargo:partyDetails:
+            '@type': cargo:Organization
+            cargo:basedAtLocation:
+              '@type': cargo:Location
+              cargo:locationName: KEYUANWEI3ROAD 21
+            cargo:name: OCS SHANGHAI CO LTD
+          cargo:partyRole:
+            '@id': https://onerecord.iata.org/ns/code-lists/ParticipantIdentifier#SHP
+            '@type': code:ParticipantIdentifier
+        - '@type': cargo:Party
+          cargo:partyDetails:
+            '@type': cargo:Organization
+            cargo:basedAtLocation:
+              '@type': cargo:Location
+              cargo:locationName: 1SENSHU KUKO MINAMI SENNAN
+            cargo:name: OCS OSAKA OFFICE
+          cargo:partyRole:
+            '@id': https://onerecord.iata.org/ns/code-lists/ParticipantIdentifier#CNE
+            '@type': code:ParticipantIdentifier
+      cargo:otherChargesIndicator:
+        '@id': code:PrepaidCollectIndicator#P
+        '@type': code:PrepaidCollectIndicator
+      cargo:referredBookingOption:
+        '@type': cargo:Booking
+        cargo:activitySequences:
+          - '@type': cargo:ActivitySequence
+            cargo:activity:
+              '@cargo:transportIdentifier':
+                '@type': http://www.w3.org/2001/XMLSchema#string
+                '@value': SC2433/18JUL
+              '@type': cargo:Transportmovement
+      cargo:shipment:
+        '@type': cargo:Shipment
+        cargo:goodsDescription: EXPRESS
+        cargo:insurance:
+          '@type': cargo:Insurance
+          cargo:insuredAmount:
+            '@type': cargo:CurrencyValue
+            cargo:currencyUnit:
+              '@id': https://vocabulary.uncefact.org/CurrencyCodeList#USD
+              '@type': code:CurrencyCode
+            cargo:numericalValue: 0
+        cargo:totalGrossWeight:
+          '@type': cargo:Value
+          cargo:numericalValue: 927
+          cargo:unit:
+            '@id': https://onerecord.iata.org/ns/code-lists/MeasurementUnitCode#KGM
+      cargo:waybillLineItems:
+        - '@cargo:lineItemPackages':
+            - cargo:pieceReferences:
+                - '@type': cargo:Piece
+                  cargo:involvedInActions:
+                    '@type': cargo:Loading
+                    cargo:servedActivity:
+                      '@type': cargo:TransportMovement
+                      cargo:movementTimes:
+                        - '@type': cargo:MovementTime
+                          cargo:movementTimestamp:
+                            '@type': http://www.w3.org/2001/XMLSchema#dateTime
+                            '@value': 2025/7/18
+                      cargo:transportIdentifier:
+                        '@type': http://www.w3.org/2001/XMLSchema#string
+                        '@value': SC2433/18JUL
+                  cargo:volumetricWeight:
+                    '@type': cargo:VolumetricWeight
+                    cargo:chargeableWeight:
+                      '@type': cargo:Value
+                      cargo:numericalValue:
+                        '@type': cargo:http://www.w3.org/2001/XMLSchema#double
+                        '@value': 1500
+                      cargo:unit:
+                        '@id': https://onerecord.iata.org/ns/code-lists/MeasurementUnitCode#KGM
+              type: cargo:LineItemPackage
+          '@type': cargo:WaybillLineItem
+          cargo:rateCharge:
+            '@type': cargo:CurrencyValue
+            cargo:currencyUnit:
+              '@type': code:CurrencyCode
+              '@value': https://vocabulary.uncefact.org/CurrencyCodeList#CNY
+            cargo:numericalValue: 0
+          cargo:rateClassCode:
+            '@id': https://onerecord.iata.org/ns/code-lists/RateClassCode#Q
+          cargo:rateVolume:
+            '@type': cargo:CurrencyValue
+            cargo:currencyUnit:
+              '@type': code:CurrencyCode
+              '@value': https://vocabulary.uncefact.org/CurrencyCodeList#CNY
+            cargo:numericalValue: 9
+      cargo:waybillType:
+        '@id': cargo:MASTER
+      cargo:weightValuationIndicator:
+        '@id': https://onerecord.iata.org/ns/code-lists/PrepaidCollectIndicator#P
+        '@type': code:PrepaidCollectIndicator
+
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 201

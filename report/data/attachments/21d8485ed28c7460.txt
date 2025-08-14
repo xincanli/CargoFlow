@@ -1,0 +1,5 @@
+INFO     BD.log:logger_util.py:51 开始执行用例：订阅BookingRequest类型
+INFO     BD.log:requests_util.py:38 响应状态码: 201
+DEBUG    BD.log:requests_util.py:39 响应内容: 
+INFO     BD.log:logger_util.py:59 用例 订阅BookingRequest类型 执行成功
+INFO     BD.log:logger_util.py:65 执行耗时: 0.088 秒

@@ -1,0 +1,736 @@
+[2025-08-13 19:51:37] [INFO] [requests_util.py:38] - 响应状态码: 200
+[2025-08-13 19:51:37] [DEBUG] [requests_util.py:39] - 响应内容: {"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIweWpYWmVNaDR3WjB5NzRpSjFtTVNIUnRNR3Uta3FFR1RoYWtPVWhMOTh3In0.eyJleHAiOjE3NTUxMjE4OTcsImlhdCI6MTc1NTA4NTg5NywianRpIjoiMDcxNTA3ZjItOTUzNy00YzU2LWI5NDctZWIwNjgzNDY2YWNjIiwiaXNzIjoiaHR0cDovLzEyMC41NS4xOTUuMTQ0Ojg5ODkvcmVhbG1zL25lb25lIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjBhZTQ5N2YxLTMxYTYtNDZkYi1hMTFhLWU1ZTJkZDFhMmNiNiIsInR5cCI6IkJlYXJlciIsImF6cCI6Im5lb25lLWNsaWVudCIsInNlc3Npb25fc3RhdGUiOiI3NDdiODE3Zi1jOTQwLTQzNGUtODBhMS00YzQ3YzEwZjczMGYiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1uZW9uZSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwic2lkIjoiNzQ3YjgxN2YtYzk0MC00MzRlLTgwYTEtNGM0N2MxMGY3MzBmIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJsb2dpc3RpY3NfYWdlbnRfdXJpIjoiaHR0cDovLzEyMC41NS4xOTUuMTQ0OjgwODAvbG9naXN0aWNzLW9iamVjdHMvZmQ5NDk3ZjktZDllMS00Y2Y3LTllNTItNzU2NGIwZWI0MmMxIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiaWF0YSJ9.LLJKimuijshQ-sDSUjQkcIuKgzM0laosw_A24Usktp3imWEpxEPXRHi3TIqoxO3fm7LKfFx5Kb2TprXtvNCbKxB9730x29cLqWFlfMaXJVIft6eVLDxgDFqY40nBYxkt1tvk4Id8-Arn1Lhiq42EcR1aP8IGIPtR-pt7N2zDEj7F5R1_PqfubjDnU2z68gDij2dsdsPrUWMRrp4P-5ekwoa-T1IASjtCapobtO-iItohBp2FexIEzeNxzH7it9NRoSILlZDXxuI6H1EL2KU21yRju6bgNtJzbhQkja37-PUbgWa7FB9pBen9uRRlgvY0hR1F919zBONtMxaqSi5Eyg","expires_in":36000,"refresh_expires_in":1800,"refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJhNTQ0ZDNiZS00YjFjLTQxMDYtOWU3NS01ODVmMjE2YTQ4N2YifQ.eyJleHAiOjE3NTUwODc2OTcsImlhdCI6MTc1NTA4NTg5NywianRpIjoiNmExY2E5OTUtOTJjMy00MDAxLWJiMTktOTkwMTFhNjZjZDUzIiwiaXNzIjoiaHR0cDovLzEyMC41NS4xOTUuMTQ0Ojg5ODkvcmVhbG1zL25lb25lIiwiYXVkIjoiaHR0cDovLzEyMC41NS4xOTUuMTQ0Ojg5ODkvcmVhbG1zL25lb25lIiwic3ViIjoiMGFlNDk3ZjEtMzFhNi00NmRiLWExMWEtZTVlMmRkMWEyY2I2IiwidHlwIjoiUmVmcmVzaCIsImF6cCI6Im5lb25lLWNsaWVudCIsInNlc3Npb25fc3RhdGUiOiI3NDdiODE3Zi1jOTQwLTQzNGUtODBhMS00YzQ3YzEwZjczMGYiLCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJzaWQiOiI3NDdiODE3Zi1jOTQwLTQzNGUtODBhMS00YzQ3YzEwZjczMGYifQ.sXpfbFQFYiIcSdEbueC3vqFqsjtsrAmtWVE9a3qtO1Q","token_type":"Bearer","not-before-policy":0,"session_state":"747b817f-c940-434e-80a1-4c47c10f730f","scope":"profile email"}
+[2025-08-13 19:51:37] [INFO] [requests_util.py:38] - 响应状态码: 200
+[2025-08-13 19:51:37] [DEBUG] [requests_util.py:39] - 响应内容: {"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJiWFV1Y01Gb05qVzZuNWtPZXd3c25EX1ZmYUVFaWVsRXhaNGVQZGJwOUVvIn0.eyJleHAiOjE3NTUxMjE4OTcsImlhdCI6MTc1NTA4NTg5NywianRpIjoiYjE0MjU1MWQtYjc3NC00ZDcwLWExNzAtY2NiN2E4Zjg1ZTJiIiwiaXNzIjoiaHR0cDovLzQ5LjIzNS4xNjMuMTUzOjg5ODkvcmVhbG1zL25lb25lIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjAzNmM3YjUwLWE5YjItNDBkZi05NWU5LTI4MGMzOTNhOGQyMiIsInR5cCI6IkJlYXJlciIsImF6cCI6Im5lb25lLWNsaWVudCIsInNlc3Npb25fc3RhdGUiOiI4MTYxMjcyMi00NjBhLTQ1ODAtODAyMC1iYzczMzIxNGRjMDQiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1uZW9uZSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwic2lkIjoiODE2MTI3MjItNDYwYS00NTgwLTgwMjAtYmM3MzMyMTRkYzA0IiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJsb2dpc3RpY3NfYWdlbnRfdXJpIjoiaHR0cDovLzQ5LjIzNS4xNjMuMTUzOjgwODAvbG9naXN0aWNzLW9iamVjdHMvMGE5NjAzNGYtM2JhYS00Njg4LWJiZTAtOTYwZGQ1YWFhNGVmIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiYWlybGluZSJ9.O-6DtAeW_pzgbJbjCjRiIGk-lL7lXzw2yWJhqS6mmYO5PFCWr6FR9lt_yh8Q7d0FgoL58CCC2ILcdLotyFtN8t1_jzSNUfZ3ZVGG_89dIDza4gUrVLr3LUmDIoBffkbTD8YrybnVY3MwONKt2sgF303iN4hVP-PCIsLMXXTINMu03TAXIQfP8O9LhlkqlHjpO1BADg93bUQM8PR5KpcW8TT4sdFcXVvuZRoIki3AcHPqykESuTHpMsY6ZqT0DW_FiuxDxCTx7u1KsMTYEUFMLzXDtEoP-wrH7FTb75kz6_pMfA4xqBi5JWWZG1mwYgeutLLEbxeqCfJz6T-4iuFgRg","expires_in":36000,"refresh_expires_in":1800,"refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI3ODg5MDQ5MC1hMjBiLTRjMDYtODdkMy04NjRkZDM0MzgwYTQifQ.eyJleHAiOjE3NTUwODc2OTcsImlhdCI6MTc1NTA4NTg5NywianRpIjoiZjBhZjlmZGYtMGU4MC00ODhkLWIyYjMtY2NkYzc0Mjg5NWMwIiwiaXNzIjoiaHR0cDovLzQ5LjIzNS4xNjMuMTUzOjg5ODkvcmVhbG1zL25lb25lIiwiYXVkIjoiaHR0cDovLzQ5LjIzNS4xNjMuMTUzOjg5ODkvcmVhbG1zL25lb25lIiwic3ViIjoiMDM2YzdiNTAtYTliMi00MGRmLTk1ZTktMjgwYzM5M2E4ZDIyIiwidHlwIjoiUmVmcmVzaCIsImF6cCI6Im5lb25lLWNsaWVudCIsInNlc3Npb25fc3RhdGUiOiI4MTYxMjcyMi00NjBhLTQ1ODAtODAyMC1iYzczMzIxNGRjMDQiLCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJzaWQiOiI4MTYxMjcyMi00NjBhLTQ1ODAtODAyMC1iYzczMzIxNGRjMDQifQ.Gai0PAj_5UQptg46LXZ-DPkyMs3vT8xkY0eDl-Ikbgg","token_type":"Bearer","not-before-policy":0,"session_state":"81612722-460a-4580-8020-bc733214dc04","scope":"profile email"}
+[2025-08-13 19:51:37] [INFO] [logger_util.py:51] - 开始执行用例：FF访问Airline
+[2025-08-13 19:51:37] [INFO] [requests_util.py:38] - 响应状态码: 200
+[2025-08-13 19:51:37] [DEBUG] [requests_util.py:39] - 响应内容: {
+  "@id" : "http://49.235.163.153:8080/",
+  "@type" : "ServerInformation",
+  "hasDataHolder" : {
+    "@id" : "http://49.235.163.153:8080/logistics-objects/_data-holder"
+  },
+  "hasServerEndpoint" : "http://49.235.163.153:8080/",
+  "hasSupportedContentType" : [ "application/turtle", "application/ld+json", "text/turtle" ],
+  "hasSupportedLanguage" : "en-US",
+  "@context" : {
+    "@vocab" : "https://onerecord.iata.org/ns/api#"
+  }
+}
+[2025-08-13 19:51:37] [INFO] [logger_util.py:59] - 用例 FF访问Airline 执行成功
+[2025-08-13 19:51:37] [INFO] [logger_util.py:65] - 执行耗时: 0.100 秒
+[2025-08-13 19:51:37] [INFO] [logger_util.py:51] - 开始执行用例：Airline访问FF
+[2025-08-13 19:51:38] [INFO] [requests_util.py:38] - 响应状态码: 200
+[2025-08-13 19:51:38] [DEBUG] [requests_util.py:39] - 响应内容: {
+  "@id" : "http://120.55.195.144:8080/",
+  "@type" : "ServerInformation",
+  "hasDataHolder" : {
+    "@id" : "http://120.55.195.144:8080/logistics-objects/_data-holder"
+  },
+  "hasServerEndpoint" : "http://120.55.195.144:8080/",
+  "hasSupportedContentType" : [ "application/turtle", "application/ld+json", "text/turtle" ],
+  "hasSupportedLanguage" : "en-US",
+  "@context" : {
+    "@vocab" : "https://onerecord.iata.org/ns/api#"
+  }
+}
+[2025-08-13 19:51:38] [INFO] [logger_util.py:59] - 用例 Airline访问FF 执行成功
+[2025-08-13 19:51:38] [INFO] [logger_util.py:65] - 执行耗时: 0.071 秒
+[2025-08-13 19:51:38] [INFO] [logger_util.py:51] - 开始执行用例：创建BookingShipment物流对象
+[2025-08-13 19:51:38] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-13 19:51:38] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-13 19:51:38] [INFO] [logger_util.py:59] - 用例 创建BookingShipment物流对象 执行成功
+[2025-08-13 19:51:38] [INFO] [logger_util.py:65] - 执行耗时: 0.096 秒
+[2025-08-13 19:51:38] [INFO] [logger_util.py:51] - 开始执行用例：订阅BookingOptionRequest类型
+[2025-08-13 19:51:38] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-13 19:51:38] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-13 19:51:38] [INFO] [logger_util.py:59] - 用例 订阅BookingOptionRequest类型 执行成功
+[2025-08-13 19:51:38] [INFO] [logger_util.py:65] - 执行耗时: 0.087 秒
+[2025-08-13 19:51:38] [INFO] [logger_util.py:51] - 开始执行用例：创建BookingOptionRequest物流对象
+[2025-08-13 19:51:38] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-13 19:51:38] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-13 19:51:38] [INFO] [logger_util.py:59] - 用例 创建BookingOptionRequest物流对象 执行成功
+[2025-08-13 19:51:38] [INFO] [logger_util.py:65] - 执行耗时: 0.103 秒
+[2025-08-13 19:51:38] [INFO] [logger_util.py:51] - 开始执行用例：订阅BookingOption类型
+[2025-08-13 19:51:38] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-13 19:51:38] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-13 19:51:38] [INFO] [logger_util.py:59] - 用例 订阅BookingOption类型 执行成功
+[2025-08-13 19:51:38] [INFO] [logger_util.py:65] - 执行耗时: 0.095 秒
+[2025-08-13 19:51:38] [INFO] [logger_util.py:51] - 开始执行用例：创建BookingOption物流对象
+[2025-08-13 19:51:38] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-13 19:51:38] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-13 19:51:38] [INFO] [logger_util.py:59] - 用例 创建BookingOption物流对象 执行成功
+[2025-08-13 19:51:38] [INFO] [logger_util.py:65] - 执行耗时: 0.110 秒
+[2025-08-13 19:51:38] [INFO] [logger_util.py:51] - 开始执行用例：FF查看BookingOption
+[2025-08-13 19:51:38] [INFO] [requests_util.py:38] - 响应状态码: 403
+[2025-08-13 19:51:38] [DEBUG] [requests_util.py:39] - 响应内容: {
+  "@graph" : [ {
+    "@id" : "neone:07648518-e483-464d-a924-03ac1772bc37",
+    "@type" : "Error",
+    "hasErrorDetail" : {
+      "@id" : "neone:74c222a2-553c-48ed-92bd-3c784a6b3454"
+    },
+    "hasTitle" : "Access Denied"
+  }, {
+    "@id" : "neone:74c222a2-553c-48ed-92bd-3c784a6b3454",
+    "@type" : "ErrorDetail",
+    "hasCode" : "Forbidden",
+    "hasMessage" : "http://120.55.195.144:8080/logistics-objects/fd9497f9-d9e1-4cf7-9e52-7564b0eb42c1 has no access to http://49.235.163.153:8080/logistics-objects/b9e263b0-9d8c-4511-b3a5-49286a96a1d1"
+  } ],
+  "@context" : {
+    "@vocab" : "https://onerecord.iata.org/ns/api#"
+  }
+}
+[2025-08-13 19:51:38] [INFO] [logger_util.py:59] - 用例 FF查看BookingOption 执行成功
+[2025-08-13 19:51:38] [INFO] [logger_util.py:65] - 执行耗时: 0.099 秒
+[2025-08-13 19:51:38] [INFO] [logger_util.py:51] - 开始执行用例：向Airline申请权限查看BookingOption
+[2025-08-13 19:51:38] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-13 19:51:38] [DEBUG] [requests_util.py:39] - 响应内容: Request for access delegation was successful
+[2025-08-13 19:51:38] [INFO] [logger_util.py:59] - 用例 向Airline申请权限查看BookingOption 执行成功
+[2025-08-13 19:51:38] [INFO] [logger_util.py:65] - 执行耗时: 0.097 秒
+[2025-08-13 19:51:38] [INFO] [logger_util.py:51] - 开始执行用例：FF查看授权statue
+[2025-08-13 19:51:38] [INFO] [requests_util.py:38] - 响应状态码: 200
+[2025-08-13 19:51:38] [DEBUG] [requests_util.py:39] - 响应内容: {
+  "@graph" : [ {
+    "@id" : "http://49.235.163.153:8080/action-requests/aa211071-8ae6-4dcb-a14e-7f19c22b01d4",
+    "@type" : "https://onerecord.iata.org/ns/api#AccessDelegationRequest",
+    "https://onerecord.iata.org/ns/api#hasAccessDelegation" : {
+      "@id" : "neone:51e4bee9-d6f2-4ae3-bc13-d6d612223dcc"
+    },
+    "https://onerecord.iata.org/ns/api#hasRequestStatus" : {
+      "@id" : "https://onerecord.iata.org/ns/api#REQUEST_PENDING"
+    },
+    "https://onerecord.iata.org/ns/api#isRequestedAt" : {
+      "@type" : "xsd:dateTime",
+      "@value" : "2025-08-13T11:51:38.312621157Z"
+    },
+    "https://onerecord.iata.org/ns/api#isRequestedBy" : {
+      "@id" : "http://120.55.195.144:8080/logistics-objects/fd9497f9-d9e1-4cf7-9e52-7564b0eb42c1"
+    }
+  }, {
+    "@id" : "neone:51e4bee9-d6f2-4ae3-bc13-d6d612223dcc",
+    "@type" : "https://onerecord.iata.org/ns/api#AccessDelegation",
+    "https://onerecord.iata.org/ns/api#hasDescription" : "Require access to Piece for handling",
+    "https://onerecord.iata.org/ns/api#hasLogisticsObject" : {
+      "@id" : "http://49.235.163.153:8080/logistics-objects/b9e263b0-9d8c-4511-b3a5-49286a96a1d1"
+    },
+    "https://onerecord.iata.org/ns/api#hasPermission" : {
+      "@id" : "https://onerecord.iata.org/ns/api#GET_LOGISTICS_OBJECT"
+    },
+    "https://onerecord.iata.org/ns/api#isRequestedFor" : {
+      "@id" : "http://120.55.195.144:8080/logistics-objects/fd9497f9-d9e1-4cf7-9e52-7564b0eb42c1"
+    },
+    "https://onerecord.iata.org/ns/api#notifyRequestStatusChange" : {
+      "@type" : "xsd:boolean",
+      "@value" : "false"
+    }
+  } ],
+  "@context" : {
+    "xsd" : "http://www.w3.org/2001/XMLSchema#"
+  }
+}
+[2025-08-13 19:51:38] [INFO] [logger_util.py:59] - 用例 FF查看授权statue 执行成功
+[2025-08-13 19:51:38] [INFO] [logger_util.py:65] - 执行耗时: 0.100 秒
+[2025-08-13 19:51:38] [INFO] [logger_util.py:51] - 开始执行用例：FF查看BookingOption
+[2025-08-13 19:51:39] [INFO] [requests_util.py:38] - 响应状态码: 403
+[2025-08-13 19:51:39] [DEBUG] [requests_util.py:39] - 响应内容: {
+  "@graph" : [ {
+    "@id" : "neone:1b17a2e0-2942-4c40-9107-4e9649058767",
+    "@type" : "ErrorDetail",
+    "hasCode" : "Forbidden",
+    "hasMessage" : "http://120.55.195.144:8080/logistics-objects/fd9497f9-d9e1-4cf7-9e52-7564b0eb42c1 has no access to http://49.235.163.153:8080/logistics-objects/b9e263b0-9d8c-4511-b3a5-49286a96a1d1"
+  }, {
+    "@id" : "neone:9b3ceb69-d3ad-46cd-9bec-01013347eaea",
+    "@type" : "Error",
+    "hasErrorDetail" : {
+      "@id" : "neone:1b17a2e0-2942-4c40-9107-4e9649058767"
+    },
+    "hasTitle" : "Access Denied"
+  } ],
+  "@context" : {
+    "@vocab" : "https://onerecord.iata.org/ns/api#"
+  }
+}
+[2025-08-13 19:51:39] [INFO] [logger_util.py:65] - 执行耗时: 0.114 秒
+[2025-08-13 19:51:39] [INFO] [logger_util.py:51] - 开始执行用例：订阅BookingRequest类型
+[2025-08-13 19:51:39] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-13 19:51:39] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-13 19:51:39] [INFO] [logger_util.py:59] - 用例 订阅BookingRequest类型 执行成功
+[2025-08-13 19:51:39] [INFO] [logger_util.py:65] - 执行耗时: 0.099 秒
+[2025-08-13 19:51:39] [INFO] [logger_util.py:51] - 开始执行用例：创建BookingRequest物流对象
+[2025-08-13 19:51:39] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-13 19:51:39] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-13 19:51:39] [INFO] [logger_util.py:59] - 用例 创建BookingRequest物流对象 执行成功
+[2025-08-13 19:51:39] [INFO] [logger_util.py:65] - 执行耗时: 0.108 秒
+[2025-08-13 19:51:39] [INFO] [logger_util.py:51] - 开始执行用例：订阅Booking类型
+[2025-08-13 19:51:39] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-13 19:51:39] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-13 19:51:39] [INFO] [logger_util.py:59] - 用例 订阅Booking类型 执行成功
+[2025-08-13 19:51:39] [INFO] [logger_util.py:65] - 执行耗时: 0.097 秒
+[2025-08-13 19:51:39] [INFO] [logger_util.py:51] - 开始执行用例：创建Booking物流对象
+[2025-08-13 19:51:39] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-13 19:51:39] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-13 19:51:39] [INFO] [logger_util.py:59] - 用例 创建Booking物流对象 执行成功
+[2025-08-13 19:51:39] [INFO] [logger_util.py:65] - 执行耗时: 0.126 秒
+[2025-08-13 19:51:39] [INFO] [logger_util.py:51] - 开始执行用例：订阅Waybill类型
+[2025-08-13 19:51:39] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-13 19:51:39] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-13 19:51:39] [INFO] [logger_util.py:59] - 用例 订阅Waybill类型 执行成功
+[2025-08-13 19:51:39] [INFO] [logger_util.py:65] - 执行耗时: 0.118 秒
+[2025-08-13 19:51:39] [INFO] [logger_util.py:51] - 开始执行用例：创建Waybill物流对象
+[2025-08-13 19:51:39] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-13 19:51:39] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-13 19:51:39] [INFO] [logger_util.py:59] - 用例 创建Waybill物流对象 执行成功
+[2025-08-13 19:51:39] [INFO] [logger_util.py:65] - 执行耗时: 0.136 秒
+[2025-08-14 09:52:40] [INFO] [requests_util.py:38] - 响应状态码: 200
+[2025-08-14 09:52:40] [DEBUG] [requests_util.py:39] - 响应内容: {"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIweWpYWmVNaDR3WjB5NzRpSjFtTVNIUnRNR3Uta3FFR1RoYWtPVWhMOTh3In0.eyJleHAiOjE3NTUxNzIzNjEsImlhdCI6MTc1NTEzNjM2MSwianRpIjoiY2YzMDI3ZjgtNTQyOC00NDA5LWExNzEtNDhjN2ZhM2U0OWQ4IiwiaXNzIjoiaHR0cDovLzEyMC41NS4xOTUuMTQ0Ojg5ODkvcmVhbG1zL25lb25lIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjBhZTQ5N2YxLTMxYTYtNDZkYi1hMTFhLWU1ZTJkZDFhMmNiNiIsInR5cCI6IkJlYXJlciIsImF6cCI6Im5lb25lLWNsaWVudCIsInNlc3Npb25fc3RhdGUiOiJjOGVmNDcyMS01ZTU1LTRmNGYtOTNiZS1hYWM2YzMyYmVhZDciLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1uZW9uZSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwic2lkIjoiYzhlZjQ3MjEtNWU1NS00ZjRmLTkzYmUtYWFjNmMzMmJlYWQ3IiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJsb2dpc3RpY3NfYWdlbnRfdXJpIjoiaHR0cDovLzEyMC41NS4xOTUuMTQ0OjgwODAvbG9naXN0aWNzLW9iamVjdHMvZmQ5NDk3ZjktZDllMS00Y2Y3LTllNTItNzU2NGIwZWI0MmMxIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiaWF0YSJ9.LCZjGTkmW-aECebhh64JfSEsflKnwZapRbQ4Uw1BWIBzioSZFZBWTJOq1f1XeUcuDqR-cbc98Vb5Y95CbGREt_5nv_1qiYH7uteps078OwYSLvQ0LUuIPirO0ChTAQYkYx0HqhUn3UNV0uddmTDSigiCUT1_jaiYQE7cUnAXn0mDnhDUFDyPwJC6CQpOdtXvZdJR6mJM1Ch6rQ__v-8zEQBIvIKpyAlLAf-SyCh2GES5r310ifyRfS77mFanp3sRULIGEh38TwZdCH8Oo4J23_VgMOVYH_Osez7jPfn_dc9ANGPwmaePduT0X1Qkkz647EEOoN2pp7laLP3_k06lTg","expires_in":36000,"refresh_expires_in":1800,"refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJhNTQ0ZDNiZS00YjFjLTQxMDYtOWU3NS01ODVmMjE2YTQ4N2YifQ.eyJleHAiOjE3NTUxMzgxNjEsImlhdCI6MTc1NTEzNjM2MSwianRpIjoiZGU1MGFjMmEtNTg1Ni00OTIzLTg0MDUtMWFhNDllMTA4NjA5IiwiaXNzIjoiaHR0cDovLzEyMC41NS4xOTUuMTQ0Ojg5ODkvcmVhbG1zL25lb25lIiwiYXVkIjoiaHR0cDovLzEyMC41NS4xOTUuMTQ0Ojg5ODkvcmVhbG1zL25lb25lIiwic3ViIjoiMGFlNDk3ZjEtMzFhNi00NmRiLWExMWEtZTVlMmRkMWEyY2I2IiwidHlwIjoiUmVmcmVzaCIsImF6cCI6Im5lb25lLWNsaWVudCIsInNlc3Npb25fc3RhdGUiOiJjOGVmNDcyMS01ZTU1LTRmNGYtOTNiZS1hYWM2YzMyYmVhZDciLCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJzaWQiOiJjOGVmNDcyMS01ZTU1LTRmNGYtOTNiZS1hYWM2YzMyYmVhZDcifQ.ubIuUrVsBYmMYEHV0oDPou7oS1as-oSw5v7H3M90qfw","token_type":"Bearer","not-before-policy":0,"session_state":"c8ef4721-5e55-4f4f-93be-aac6c32bead7","scope":"profile email"}
+[2025-08-14 09:52:40] [INFO] [requests_util.py:38] - 响应状态码: 200
+[2025-08-14 09:52:40] [DEBUG] [requests_util.py:39] - 响应内容: {"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJiWFV1Y01Gb05qVzZuNWtPZXd3c25EX1ZmYUVFaWVsRXhaNGVQZGJwOUVvIn0.eyJleHAiOjE3NTUxNzIzNjEsImlhdCI6MTc1NTEzNjM2MSwianRpIjoiNWFlZTU2MzQtZTdkMC00Y2M4LWI0MjYtYWM2ODQ2OWNhMzUxIiwiaXNzIjoiaHR0cDovLzQ5LjIzNS4xNjMuMTUzOjg5ODkvcmVhbG1zL25lb25lIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjAzNmM3YjUwLWE5YjItNDBkZi05NWU5LTI4MGMzOTNhOGQyMiIsInR5cCI6IkJlYXJlciIsImF6cCI6Im5lb25lLWNsaWVudCIsInNlc3Npb25fc3RhdGUiOiJkYjgxNWM4OS00Mzk3LTQ1ZjctYTMzMC03YmM0YWE1NTBlMTAiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1uZW9uZSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwic2lkIjoiZGI4MTVjODktNDM5Ny00NWY3LWEzMzAtN2JjNGFhNTUwZTEwIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJsb2dpc3RpY3NfYWdlbnRfdXJpIjoiaHR0cDovLzQ5LjIzNS4xNjMuMTUzOjgwODAvbG9naXN0aWNzLW9iamVjdHMvMGE5NjAzNGYtM2JhYS00Njg4LWJiZTAtOTYwZGQ1YWFhNGVmIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiYWlybGluZSJ9.jtyGixJeOTv3ShI7rVrBx26j_aa-3Q8Z_470NPWG0wkzpDIEuJWZ2Aq6OOqJm1VElOGPnCro1smtZsDJkzxCWFKr0bpZEUvtQXia3mBUdOMJYh8nIadqwPcRcPUp_J3tMVmY7_j-0JFSppKGvIbkA0AvWbvHHlyTwpxND5tAS_K1EzkLVYF3l4oUc62jH6F5dy2tHwcD8jGAFxc3POrNg-C34Y14C7UPIGel4k8xyk2xn7wNgDPYFGl5cVCqeDF5SHRYfTPwnPnG0Ot8qpEwvLjYnCZiHP0mST11QDtDKtFyeTtoComsyC_pfRhz1vZLtdaCiMIT4sjWBBfo_v2QXg","expires_in":36000,"refresh_expires_in":1800,"refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI3ODg5MDQ5MC1hMjBiLTRjMDYtODdkMy04NjRkZDM0MzgwYTQifQ.eyJleHAiOjE3NTUxMzgxNjEsImlhdCI6MTc1NTEzNjM2MSwianRpIjoiYjdjY2JmY2YtOTAxZS00YjdkLWE1MTMtY2MzMzE2ZmIyN2FjIiwiaXNzIjoiaHR0cDovLzQ5LjIzNS4xNjMuMTUzOjg5ODkvcmVhbG1zL25lb25lIiwiYXVkIjoiaHR0cDovLzQ5LjIzNS4xNjMuMTUzOjg5ODkvcmVhbG1zL25lb25lIiwic3ViIjoiMDM2YzdiNTAtYTliMi00MGRmLTk1ZTktMjgwYzM5M2E4ZDIyIiwidHlwIjoiUmVmcmVzaCIsImF6cCI6Im5lb25lLWNsaWVudCIsInNlc3Npb25fc3RhdGUiOiJkYjgxNWM4OS00Mzk3LTQ1ZjctYTMzMC03YmM0YWE1NTBlMTAiLCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJzaWQiOiJkYjgxNWM4OS00Mzk3LTQ1ZjctYTMzMC03YmM0YWE1NTBlMTAifQ.bPPOmQV5wak0-Y0E6bRvWaz5mnKET3KYalYRHf99Z3c","token_type":"Bearer","not-before-policy":0,"session_state":"db815c89-4397-45f7-a330-7bc4aa550e10","scope":"profile email"}
+[2025-08-14 09:52:40] [INFO] [logger_util.py:51] - 开始执行用例：FF访问Airline
+[2025-08-14 09:52:40] [INFO] [requests_util.py:38] - 响应状态码: 200
+[2025-08-14 09:52:40] [DEBUG] [requests_util.py:39] - 响应内容: {
+  "@id" : "http://49.235.163.153:8080/",
+  "@type" : "ServerInformation",
+  "hasDataHolder" : {
+    "@id" : "http://49.235.163.153:8080/logistics-objects/_data-holder"
+  },
+  "hasServerEndpoint" : "http://49.235.163.153:8080/",
+  "hasSupportedContentType" : [ "application/turtle", "application/ld+json", "text/turtle" ],
+  "hasSupportedLanguage" : "en-US",
+  "@context" : {
+    "@vocab" : "https://onerecord.iata.org/ns/api#"
+  }
+}
+[2025-08-14 09:52:40] [INFO] [logger_util.py:59] - 用例 FF访问Airline 执行成功
+[2025-08-14 09:52:40] [INFO] [logger_util.py:65] - 执行耗时: 0.132 秒
+[2025-08-14 09:52:40] [INFO] [logger_util.py:51] - 开始执行用例：Airline访问FF
+[2025-08-14 09:52:40] [INFO] [requests_util.py:38] - 响应状态码: 200
+[2025-08-14 09:52:40] [DEBUG] [requests_util.py:39] - 响应内容: {
+  "@id" : "http://120.55.195.144:8080/",
+  "@type" : "ServerInformation",
+  "hasDataHolder" : {
+    "@id" : "http://120.55.195.144:8080/logistics-objects/_data-holder"
+  },
+  "hasServerEndpoint" : "http://120.55.195.144:8080/",
+  "hasSupportedContentType" : [ "application/turtle", "application/ld+json", "text/turtle" ],
+  "hasSupportedLanguage" : "en-US",
+  "@context" : {
+    "@vocab" : "https://onerecord.iata.org/ns/api#"
+  }
+}
+[2025-08-14 09:52:40] [INFO] [logger_util.py:59] - 用例 Airline访问FF 执行成功
+[2025-08-14 09:52:40] [INFO] [logger_util.py:65] - 执行耗时: 0.161 秒
+[2025-08-14 09:52:40] [INFO] [logger_util.py:51] - 开始执行用例：创建BookingShipment物流对象
+[2025-08-14 09:52:40] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 09:52:40] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 09:52:40] [INFO] [logger_util.py:59] - 用例 创建BookingShipment物流对象 执行成功
+[2025-08-14 09:52:40] [INFO] [logger_util.py:65] - 执行耗时: 0.124 秒
+[2025-08-14 09:52:40] [INFO] [logger_util.py:51] - 开始执行用例：订阅BookingOptionRequest类型
+[2025-08-14 09:52:41] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 09:52:41] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 09:52:41] [INFO] [logger_util.py:59] - 用例 订阅BookingOptionRequest类型 执行成功
+[2025-08-14 09:52:41] [INFO] [logger_util.py:65] - 执行耗时: 0.127 秒
+[2025-08-14 09:52:41] [INFO] [logger_util.py:51] - 开始执行用例：创建BookingOptionRequest物流对象
+[2025-08-14 09:52:41] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 09:52:41] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 09:52:41] [INFO] [logger_util.py:59] - 用例 创建BookingOptionRequest物流对象 执行成功
+[2025-08-14 09:52:41] [INFO] [logger_util.py:65] - 执行耗时: 0.149 秒
+[2025-08-14 09:52:41] [INFO] [logger_util.py:51] - 开始执行用例：订阅BookingOption类型
+[2025-08-14 09:52:41] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 09:52:41] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 09:52:41] [INFO] [logger_util.py:59] - 用例 订阅BookingOption类型 执行成功
+[2025-08-14 09:52:41] [INFO] [logger_util.py:65] - 执行耗时: 0.109 秒
+[2025-08-14 09:52:41] [INFO] [logger_util.py:51] - 开始执行用例：创建BookingOption物流对象
+[2025-08-14 09:52:41] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 09:52:41] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 09:52:41] [INFO] [logger_util.py:59] - 用例 创建BookingOption物流对象 执行成功
+[2025-08-14 09:52:41] [INFO] [logger_util.py:65] - 执行耗时: 0.121 秒
+[2025-08-14 09:52:41] [INFO] [logger_util.py:51] - 开始执行用例：FF查看BookingOption
+[2025-08-14 09:52:41] [INFO] [requests_util.py:38] - 响应状态码: 403
+[2025-08-14 09:52:41] [DEBUG] [requests_util.py:39] - 响应内容: {
+  "@graph" : [ {
+    "@id" : "neone:134d3ba1-a144-42a5-98e5-6c2ebccb7128",
+    "@type" : "Error",
+    "hasErrorDetail" : {
+      "@id" : "neone:84b6943b-6173-41ba-9ea3-ce2a896ccea5"
+    },
+    "hasTitle" : "Access Denied"
+  }, {
+    "@id" : "neone:84b6943b-6173-41ba-9ea3-ce2a896ccea5",
+    "@type" : "ErrorDetail",
+    "hasCode" : "Forbidden",
+    "hasMessage" : "http://120.55.195.144:8080/logistics-objects/fd9497f9-d9e1-4cf7-9e52-7564b0eb42c1 has no access to http://49.235.163.153:8080/logistics-objects/02c5d6dd-173f-485c-bc42-6fe5a72c305f"
+  } ],
+  "@context" : {
+    "@vocab" : "https://onerecord.iata.org/ns/api#"
+  }
+}
+[2025-08-14 09:52:41] [INFO] [logger_util.py:59] - 用例 FF查看BookingOption 执行成功
+[2025-08-14 09:52:41] [INFO] [logger_util.py:65] - 执行耗时: 0.101 秒
+[2025-08-14 09:52:41] [INFO] [logger_util.py:51] - 开始执行用例：向Airline申请权限查看BookingOption
+[2025-08-14 09:52:41] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 09:52:41] [DEBUG] [requests_util.py:39] - 响应内容: Request for access delegation was successful
+[2025-08-14 09:52:41] [INFO] [logger_util.py:59] - 用例 向Airline申请权限查看BookingOption 执行成功
+[2025-08-14 09:52:41] [INFO] [logger_util.py:65] - 执行耗时: 0.094 秒
+[2025-08-14 09:52:41] [INFO] [logger_util.py:51] - 开始执行用例：FF查看授权statue
+[2025-08-14 09:52:41] [INFO] [requests_util.py:38] - 响应状态码: 200
+[2025-08-14 09:52:41] [DEBUG] [requests_util.py:39] - 响应内容: {
+  "@graph" : [ {
+    "@id" : "http://49.235.163.153:8080/action-requests/e638cae6-3167-43e9-b889-3c2fd465e52e",
+    "@type" : "https://onerecord.iata.org/ns/api#AccessDelegationRequest",
+    "https://onerecord.iata.org/ns/api#hasAccessDelegation" : {
+      "@id" : "neone:58faa033-4559-4202-aa8e-9a08cabdea5d"
+    },
+    "https://onerecord.iata.org/ns/api#hasRequestStatus" : {
+      "@id" : "https://onerecord.iata.org/ns/api#REQUEST_PENDING"
+    },
+    "https://onerecord.iata.org/ns/api#isRequestedAt" : {
+      "@type" : "xsd:dateTime",
+      "@value" : "2025-08-14T01:52:42.452654719Z"
+    },
+    "https://onerecord.iata.org/ns/api#isRequestedBy" : {
+      "@id" : "http://120.55.195.144:8080/logistics-objects/fd9497f9-d9e1-4cf7-9e52-7564b0eb42c1"
+    }
+  }, {
+    "@id" : "neone:58faa033-4559-4202-aa8e-9a08cabdea5d",
+    "@type" : "https://onerecord.iata.org/ns/api#AccessDelegation",
+    "https://onerecord.iata.org/ns/api#hasDescription" : "Require access to Piece for handling",
+    "https://onerecord.iata.org/ns/api#hasLogisticsObject" : {
+      "@id" : "http://49.235.163.153:8080/logistics-objects/02c5d6dd-173f-485c-bc42-6fe5a72c305f"
+    },
+    "https://onerecord.iata.org/ns/api#hasPermission" : {
+      "@id" : "https://onerecord.iata.org/ns/api#GET_LOGISTICS_OBJECT"
+    },
+    "https://onerecord.iata.org/ns/api#isRequestedFor" : {
+      "@id" : "http://120.55.195.144:8080/logistics-objects/fd9497f9-d9e1-4cf7-9e52-7564b0eb42c1"
+    },
+    "https://onerecord.iata.org/ns/api#notifyRequestStatusChange" : {
+      "@type" : "xsd:boolean",
+      "@value" : "false"
+    }
+  } ],
+  "@context" : {
+    "xsd" : "http://www.w3.org/2001/XMLSchema#"
+  }
+}
+[2025-08-14 09:52:41] [INFO] [logger_util.py:59] - 用例 FF查看授权statue 执行成功
+[2025-08-14 09:52:41] [INFO] [logger_util.py:65] - 执行耗时: 0.104 秒
+[2025-08-14 09:52:41] [INFO] [logger_util.py:51] - 开始执行用例：FF查看BookingOption
+[2025-08-14 09:52:41] [INFO] [requests_util.py:38] - 响应状态码: 403
+[2025-08-14 09:52:41] [DEBUG] [requests_util.py:39] - 响应内容: {
+  "@graph" : [ {
+    "@id" : "neone:1ab065af-9802-4c6c-8e85-e0a762ec1397",
+    "@type" : "ErrorDetail",
+    "hasCode" : "Forbidden",
+    "hasMessage" : "http://120.55.195.144:8080/logistics-objects/fd9497f9-d9e1-4cf7-9e52-7564b0eb42c1 has no access to http://49.235.163.153:8080/logistics-objects/02c5d6dd-173f-485c-bc42-6fe5a72c305f"
+  }, {
+    "@id" : "neone:45074c99-251f-47e5-b06c-5ff3895babe5",
+    "@type" : "Error",
+    "hasErrorDetail" : {
+      "@id" : "neone:1ab065af-9802-4c6c-8e85-e0a762ec1397"
+    },
+    "hasTitle" : "Access Denied"
+  } ],
+  "@context" : {
+    "@vocab" : "https://onerecord.iata.org/ns/api#"
+  }
+}
+[2025-08-14 09:52:41] [INFO] [logger_util.py:65] - 执行耗时: 0.087 秒
+[2025-08-14 09:52:42] [INFO] [logger_util.py:51] - 开始执行用例：订阅BookingRequest类型
+[2025-08-14 09:52:42] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 09:52:42] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 09:52:42] [INFO] [logger_util.py:59] - 用例 订阅BookingRequest类型 执行成功
+[2025-08-14 09:52:42] [INFO] [logger_util.py:65] - 执行耗时: 0.081 秒
+[2025-08-14 09:52:42] [INFO] [logger_util.py:51] - 开始执行用例：创建BookingRequest物流对象
+[2025-08-14 09:52:42] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 09:52:42] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 09:52:42] [INFO] [logger_util.py:59] - 用例 创建BookingRequest物流对象 执行成功
+[2025-08-14 09:52:42] [INFO] [logger_util.py:65] - 执行耗时: 0.111 秒
+[2025-08-14 09:52:42] [INFO] [logger_util.py:51] - 开始执行用例：订阅Booking类型
+[2025-08-14 09:52:42] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 09:52:42] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 09:52:42] [INFO] [logger_util.py:59] - 用例 订阅Booking类型 执行成功
+[2025-08-14 09:52:42] [INFO] [logger_util.py:65] - 执行耗时: 0.099 秒
+[2025-08-14 09:52:42] [INFO] [logger_util.py:51] - 开始执行用例：创建Booking物流对象
+[2025-08-14 09:52:42] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 09:52:42] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 09:52:42] [INFO] [logger_util.py:59] - 用例 创建Booking物流对象 执行成功
+[2025-08-14 09:52:42] [INFO] [logger_util.py:65] - 执行耗时: 0.118 秒
+[2025-08-14 09:52:42] [INFO] [logger_util.py:51] - 开始执行用例：订阅Waybill类型
+[2025-08-14 09:52:42] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 09:52:42] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 09:52:42] [INFO] [logger_util.py:59] - 用例 订阅Waybill类型 执行成功
+[2025-08-14 09:52:42] [INFO] [logger_util.py:65] - 执行耗时: 0.118 秒
+[2025-08-14 09:52:42] [INFO] [logger_util.py:51] - 开始执行用例：创建Waybill物流对象
+[2025-08-14 09:52:42] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 09:52:42] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 09:52:42] [INFO] [logger_util.py:59] - 用例 创建Waybill物流对象 执行成功
+[2025-08-14 09:52:42] [INFO] [logger_util.py:65] - 执行耗时: 0.182 秒
+[2025-08-14 10:00:36] [INFO] [requests_util.py:38] - 响应状态码: 200
+[2025-08-14 10:00:36] [DEBUG] [requests_util.py:39] - 响应内容: {"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIweWpYWmVNaDR3WjB5NzRpSjFtTVNIUnRNR3Uta3FFR1RoYWtPVWhMOTh3In0.eyJleHAiOjE3NTUxNzI4MzcsImlhdCI6MTc1NTEzNjgzNywianRpIjoiODFiMmYwYjQtZTNhZi00YmIyLWJiNjUtOTIwNmYzMDlmMzA1IiwiaXNzIjoiaHR0cDovLzEyMC41NS4xOTUuMTQ0Ojg5ODkvcmVhbG1zL25lb25lIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjBhZTQ5N2YxLTMxYTYtNDZkYi1hMTFhLWU1ZTJkZDFhMmNiNiIsInR5cCI6IkJlYXJlciIsImF6cCI6Im5lb25lLWNsaWVudCIsInNlc3Npb25fc3RhdGUiOiJkMjhiMjZhYS1lMjEwLTQ4YjYtYTM4Zi1lODJkNmY0ZTQ2MjAiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1uZW9uZSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwic2lkIjoiZDI4YjI2YWEtZTIxMC00OGI2LWEzOGYtZTgyZDZmNGU0NjIwIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJsb2dpc3RpY3NfYWdlbnRfdXJpIjoiaHR0cDovLzEyMC41NS4xOTUuMTQ0OjgwODAvbG9naXN0aWNzLW9iamVjdHMvZmQ5NDk3ZjktZDllMS00Y2Y3LTllNTItNzU2NGIwZWI0MmMxIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiaWF0YSJ9.yLgdUNe1oaRIKUX15diUXslq-zPDDcPCEjTzS5kAUW15UezYaKuR7gnlrtiVVTMQyOcnmghm9KCSmDeVaeRtQPxmfSAn8Ip_6RzjCY0IbrIa63RUjoEUGCLhrjB6KK1npDMELLOfrgbH8qnxu1VUcRaZw1frilvCccy2KvmD-vEkmBqdrsJbGnpaeJJ54hgZEctBVPIz-2Ql1N9DVDKNrr3Ruc8GrNFk2LhX-SGoy1WfNoMmd5MhOsj-AgDUCvarQ7aL1sQT4RzAh1_yIUghFeYh5n_UG7LxfdMjF1za3FtNE4o2joeMoTW-W0FONHJJUeAk73YVb45HmT8GUsAEWA","expires_in":36000,"refresh_expires_in":1800,"refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJhNTQ0ZDNiZS00YjFjLTQxMDYtOWU3NS01ODVmMjE2YTQ4N2YifQ.eyJleHAiOjE3NTUxMzg2MzcsImlhdCI6MTc1NTEzNjgzNywianRpIjoiNGQ4NWNjOGItYTBlOS00YzZjLWFjYzYtNDk5OGQyOTM1NzNjIiwiaXNzIjoiaHR0cDovLzEyMC41NS4xOTUuMTQ0Ojg5ODkvcmVhbG1zL25lb25lIiwiYXVkIjoiaHR0cDovLzEyMC41NS4xOTUuMTQ0Ojg5ODkvcmVhbG1zL25lb25lIiwic3ViIjoiMGFlNDk3ZjEtMzFhNi00NmRiLWExMWEtZTVlMmRkMWEyY2I2IiwidHlwIjoiUmVmcmVzaCIsImF6cCI6Im5lb25lLWNsaWVudCIsInNlc3Npb25fc3RhdGUiOiJkMjhiMjZhYS1lMjEwLTQ4YjYtYTM4Zi1lODJkNmY0ZTQ2MjAiLCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJzaWQiOiJkMjhiMjZhYS1lMjEwLTQ4YjYtYTM4Zi1lODJkNmY0ZTQ2MjAifQ.CqyZOeCjye93ScdnlfK5groeWJZr8iu2QLhCa6T1OGg","token_type":"Bearer","not-before-policy":0,"session_state":"d28b26aa-e210-48b6-a38f-e82d6f4e4620","scope":"profile email"}
+[2025-08-14 10:00:36] [INFO] [requests_util.py:38] - 响应状态码: 200
+[2025-08-14 10:00:36] [DEBUG] [requests_util.py:39] - 响应内容: {"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJiWFV1Y01Gb05qVzZuNWtPZXd3c25EX1ZmYUVFaWVsRXhaNGVQZGJwOUVvIn0.eyJleHAiOjE3NTUxNzI4MzcsImlhdCI6MTc1NTEzNjgzNywianRpIjoiZDRjZjQzYjItNDQyYS00MjdlLWE0M2YtNWZmNDc2NGM0Y2E3IiwiaXNzIjoiaHR0cDovLzQ5LjIzNS4xNjMuMTUzOjg5ODkvcmVhbG1zL25lb25lIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjAzNmM3YjUwLWE5YjItNDBkZi05NWU5LTI4MGMzOTNhOGQyMiIsInR5cCI6IkJlYXJlciIsImF6cCI6Im5lb25lLWNsaWVudCIsInNlc3Npb25fc3RhdGUiOiIxNjJkMTJlNy01MzNiLTQ1NzItODAxZC1mMWNmZDNlNjVlOTkiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1uZW9uZSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwic2lkIjoiMTYyZDEyZTctNTMzYi00NTcyLTgwMWQtZjFjZmQzZTY1ZTk5IiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJsb2dpc3RpY3NfYWdlbnRfdXJpIjoiaHR0cDovLzQ5LjIzNS4xNjMuMTUzOjgwODAvbG9naXN0aWNzLW9iamVjdHMvMGE5NjAzNGYtM2JhYS00Njg4LWJiZTAtOTYwZGQ1YWFhNGVmIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiYWlybGluZSJ9.YiPPx7E1_6efTW3kKBuSONBsgjIH7kV3uLlo-Gce1TwDTVfi6-npt_ZJ0k1VAt1OQTTD9Mf0ReYeR1X1eu1o3VDijT8t-8hoNE8wn21Qos8yfRySENgI3sGA7ieeVWgn7e3S6-pbyU8YmpYULnp1seEsBMqTnA6VqTJckUUCwi7QvS6fYywu735aKd4IUl0Nt8qsaZ147fGDo2k4XJpY_0DeG7IWEztjhYrLR1fFCiCoe_pwpXX2v_tqOutQxzZ-MpSklt1rcSc8ugckcDTrovF1SS-0wS8PXKi6nKRfLwIve0LlUQAybyHaxZn5But7XIphgp30HS_kyF9syadUyg","expires_in":36000,"refresh_expires_in":1800,"refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI3ODg5MDQ5MC1hMjBiLTRjMDYtODdkMy04NjRkZDM0MzgwYTQifQ.eyJleHAiOjE3NTUxMzg2MzcsImlhdCI6MTc1NTEzNjgzNywianRpIjoiZTcyNTg0NDYtMmY1NC00MTc2LTlmMjQtM2VmMWI4OTBjMDA2IiwiaXNzIjoiaHR0cDovLzQ5LjIzNS4xNjMuMTUzOjg5ODkvcmVhbG1zL25lb25lIiwiYXVkIjoiaHR0cDovLzQ5LjIzNS4xNjMuMTUzOjg5ODkvcmVhbG1zL25lb25lIiwic3ViIjoiMDM2YzdiNTAtYTliMi00MGRmLTk1ZTktMjgwYzM5M2E4ZDIyIiwidHlwIjoiUmVmcmVzaCIsImF6cCI6Im5lb25lLWNsaWVudCIsInNlc3Npb25fc3RhdGUiOiIxNjJkMTJlNy01MzNiLTQ1NzItODAxZC1mMWNmZDNlNjVlOTkiLCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJzaWQiOiIxNjJkMTJlNy01MzNiLTQ1NzItODAxZC1mMWNmZDNlNjVlOTkifQ.rOEHFJcWMdCyiTWW7ebeuKLhyczEcefms1LLazqqwSc","token_type":"Bearer","not-before-policy":0,"session_state":"162d12e7-533b-4572-801d-f1cfd3e65e99","scope":"profile email"}
+[2025-08-14 10:00:36] [INFO] [logger_util.py:51] - 开始执行用例：FF访问Airline
+[2025-08-14 10:00:36] [INFO] [requests_util.py:38] - 响应状态码: 200
+[2025-08-14 10:00:36] [DEBUG] [requests_util.py:39] - 响应内容: {
+  "@id" : "http://49.235.163.153:8080/",
+  "@type" : "ServerInformation",
+  "hasDataHolder" : {
+    "@id" : "http://49.235.163.153:8080/logistics-objects/_data-holder"
+  },
+  "hasServerEndpoint" : "http://49.235.163.153:8080/",
+  "hasSupportedContentType" : [ "application/turtle", "application/ld+json", "text/turtle" ],
+  "hasSupportedLanguage" : "en-US",
+  "@context" : {
+    "@vocab" : "https://onerecord.iata.org/ns/api#"
+  }
+}
+[2025-08-14 10:00:36] [INFO] [logger_util.py:59] - 用例 FF访问Airline 执行成功
+[2025-08-14 10:00:36] [INFO] [logger_util.py:65] - 执行耗时: 0.092 秒
+[2025-08-14 10:00:36] [INFO] [logger_util.py:51] - 开始执行用例：Airline访问FF
+[2025-08-14 10:00:36] [INFO] [requests_util.py:38] - 响应状态码: 200
+[2025-08-14 10:00:36] [DEBUG] [requests_util.py:39] - 响应内容: {
+  "@id" : "http://120.55.195.144:8080/",
+  "@type" : "ServerInformation",
+  "hasDataHolder" : {
+    "@id" : "http://120.55.195.144:8080/logistics-objects/_data-holder"
+  },
+  "hasServerEndpoint" : "http://120.55.195.144:8080/",
+  "hasSupportedContentType" : [ "application/turtle", "application/ld+json", "text/turtle" ],
+  "hasSupportedLanguage" : "en-US",
+  "@context" : {
+    "@vocab" : "https://onerecord.iata.org/ns/api#"
+  }
+}
+[2025-08-14 10:00:36] [INFO] [logger_util.py:59] - 用例 Airline访问FF 执行成功
+[2025-08-14 10:00:36] [INFO] [logger_util.py:65] - 执行耗时: 0.089 秒
+[2025-08-14 10:00:36] [INFO] [logger_util.py:51] - 开始执行用例：创建BookingShipment物流对象
+[2025-08-14 10:00:37] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 10:00:37] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 10:00:37] [INFO] [logger_util.py:59] - 用例 创建BookingShipment物流对象 执行成功
+[2025-08-14 10:00:37] [INFO] [logger_util.py:65] - 执行耗时: 0.125 秒
+[2025-08-14 10:00:37] [INFO] [logger_util.py:51] - 开始执行用例：订阅BookingOptionRequest类型
+[2025-08-14 10:00:37] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 10:00:37] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 10:00:37] [INFO] [logger_util.py:59] - 用例 订阅BookingOptionRequest类型 执行成功
+[2025-08-14 10:00:37] [INFO] [logger_util.py:65] - 执行耗时: 0.097 秒
+[2025-08-14 10:00:37] [INFO] [logger_util.py:51] - 开始执行用例：创建BookingOptionRequest物流对象
+[2025-08-14 10:00:37] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 10:00:37] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 10:00:37] [INFO] [logger_util.py:59] - 用例 创建BookingOptionRequest物流对象 执行成功
+[2025-08-14 10:00:37] [INFO] [logger_util.py:65] - 执行耗时: 0.141 秒
+[2025-08-14 10:00:37] [INFO] [logger_util.py:51] - 开始执行用例：订阅BookingOption类型
+[2025-08-14 10:00:37] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 10:00:37] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 10:00:37] [INFO] [logger_util.py:59] - 用例 订阅BookingOption类型 执行成功
+[2025-08-14 10:00:37] [INFO] [logger_util.py:65] - 执行耗时: 0.108 秒
+[2025-08-14 10:00:37] [INFO] [logger_util.py:51] - 开始执行用例：创建BookingOption物流对象
+[2025-08-14 10:00:37] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 10:00:37] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 10:00:37] [INFO] [logger_util.py:59] - 用例 创建BookingOption物流对象 执行成功
+[2025-08-14 10:00:37] [INFO] [logger_util.py:65] - 执行耗时: 0.109 秒
+[2025-08-14 10:00:37] [INFO] [logger_util.py:51] - 开始执行用例：FF查看BookingOption
+[2025-08-14 10:00:37] [INFO] [requests_util.py:38] - 响应状态码: 403
+[2025-08-14 10:00:37] [DEBUG] [requests_util.py:39] - 响应内容: {
+  "@graph" : [ {
+    "@id" : "neone:7f842df7-66a8-4969-8ba3-29ab586f4291",
+    "@type" : "Error",
+    "hasErrorDetail" : {
+      "@id" : "neone:86532b14-3d56-4e48-804e-6b3a5476683c"
+    },
+    "hasTitle" : "Access Denied"
+  }, {
+    "@id" : "neone:86532b14-3d56-4e48-804e-6b3a5476683c",
+    "@type" : "ErrorDetail",
+    "hasCode" : "Forbidden",
+    "hasMessage" : "http://120.55.195.144:8080/logistics-objects/fd9497f9-d9e1-4cf7-9e52-7564b0eb42c1 has no access to http://49.235.163.153:8080/logistics-objects/1f58be97-4b91-402d-8924-41b3340b6896"
+  } ],
+  "@context" : {
+    "@vocab" : "https://onerecord.iata.org/ns/api#"
+  }
+}
+[2025-08-14 10:00:37] [INFO] [logger_util.py:59] - 用例 FF查看BookingOption 执行成功
+[2025-08-14 10:00:37] [INFO] [logger_util.py:65] - 执行耗时: 0.101 秒
+[2025-08-14 10:00:37] [INFO] [logger_util.py:51] - 开始执行用例：向Airline申请权限查看BookingOption
+[2025-08-14 10:00:37] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 10:00:37] [DEBUG] [requests_util.py:39] - 响应内容: Request for access delegation was successful
+[2025-08-14 10:00:37] [INFO] [logger_util.py:59] - 用例 向Airline申请权限查看BookingOption 执行成功
+[2025-08-14 10:00:37] [INFO] [logger_util.py:65] - 执行耗时: 0.096 秒
+[2025-08-14 10:00:37] [INFO] [logger_util.py:51] - 开始执行用例：FF查看授权statue
+[2025-08-14 10:00:37] [INFO] [requests_util.py:38] - 响应状态码: 200
+[2025-08-14 10:00:37] [DEBUG] [requests_util.py:39] - 响应内容: {
+  "@graph" : [ {
+    "@id" : "http://49.235.163.153:8080/action-requests/494c4b8e-6cf4-41ae-9dec-daa21eaebf57",
+    "@type" : "https://onerecord.iata.org/ns/api#AccessDelegationRequest",
+    "https://onerecord.iata.org/ns/api#hasAccessDelegation" : {
+      "@id" : "neone:fc928af0-c33c-4aa8-ab4f-c6188282cb73"
+    },
+    "https://onerecord.iata.org/ns/api#hasRequestStatus" : {
+      "@id" : "https://onerecord.iata.org/ns/api#REQUEST_PENDING"
+    },
+    "https://onerecord.iata.org/ns/api#isRequestedAt" : {
+      "@type" : "xsd:dateTime",
+      "@value" : "2025-08-14T02:00:38.450128541Z"
+    },
+    "https://onerecord.iata.org/ns/api#isRequestedBy" : {
+      "@id" : "http://120.55.195.144:8080/logistics-objects/fd9497f9-d9e1-4cf7-9e52-7564b0eb42c1"
+    }
+  }, {
+    "@id" : "neone:fc928af0-c33c-4aa8-ab4f-c6188282cb73",
+    "@type" : "https://onerecord.iata.org/ns/api#AccessDelegation",
+    "https://onerecord.iata.org/ns/api#hasDescription" : "Require access to Piece for handling",
+    "https://onerecord.iata.org/ns/api#hasLogisticsObject" : {
+      "@id" : "http://49.235.163.153:8080/logistics-objects/1f58be97-4b91-402d-8924-41b3340b6896"
+    },
+    "https://onerecord.iata.org/ns/api#hasPermission" : {
+      "@id" : "https://onerecord.iata.org/ns/api#GET_LOGISTICS_OBJECT"
+    },
+    "https://onerecord.iata.org/ns/api#isRequestedFor" : {
+      "@id" : "http://120.55.195.144:8080/logistics-objects/fd9497f9-d9e1-4cf7-9e52-7564b0eb42c1"
+    },
+    "https://onerecord.iata.org/ns/api#notifyRequestStatusChange" : {
+      "@type" : "xsd:boolean",
+      "@value" : "false"
+    }
+  } ],
+  "@context" : {
+    "xsd" : "http://www.w3.org/2001/XMLSchema#"
+  }
+}
+[2025-08-14 10:00:37] [INFO] [logger_util.py:59] - 用例 FF查看授权statue 执行成功
+[2025-08-14 10:00:37] [INFO] [logger_util.py:65] - 执行耗时: 0.099 秒
+[2025-08-14 10:00:37] [INFO] [logger_util.py:51] - 开始执行用例：FF查看BookingOption
+[2025-08-14 10:00:37] [INFO] [requests_util.py:38] - 响应状态码: 403
+[2025-08-14 10:00:37] [DEBUG] [requests_util.py:39] - 响应内容: {
+  "@graph" : [ {
+    "@id" : "neone:85ce63f9-cf75-46d2-93cb-b83cebbd032a",
+    "@type" : "Error",
+    "hasErrorDetail" : {
+      "@id" : "neone:c0642352-0ea7-4872-aaeb-276072c9d1a8"
+    },
+    "hasTitle" : "Access Denied"
+  }, {
+    "@id" : "neone:c0642352-0ea7-4872-aaeb-276072c9d1a8",
+    "@type" : "ErrorDetail",
+    "hasCode" : "Forbidden",
+    "hasMessage" : "http://120.55.195.144:8080/logistics-objects/fd9497f9-d9e1-4cf7-9e52-7564b0eb42c1 has no access to http://49.235.163.153:8080/logistics-objects/1f58be97-4b91-402d-8924-41b3340b6896"
+  } ],
+  "@context" : {
+    "@vocab" : "https://onerecord.iata.org/ns/api#"
+  }
+}
+[2025-08-14 10:00:37] [INFO] [logger_util.py:65] - 执行耗时: 0.100 秒
+[2025-08-14 10:00:38] [INFO] [logger_util.py:51] - 开始执行用例：订阅BookingRequest类型
+[2025-08-14 10:00:38] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 10:00:38] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 10:00:38] [INFO] [logger_util.py:59] - 用例 订阅BookingRequest类型 执行成功
+[2025-08-14 10:00:38] [INFO] [logger_util.py:65] - 执行耗时: 0.085 秒
+[2025-08-14 10:00:38] [INFO] [logger_util.py:51] - 开始执行用例：创建BookingRequest物流对象
+[2025-08-14 10:00:38] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 10:00:38] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 10:00:38] [INFO] [logger_util.py:59] - 用例 创建BookingRequest物流对象 执行成功
+[2025-08-14 10:00:38] [INFO] [logger_util.py:65] - 执行耗时: 0.100 秒
+[2025-08-14 10:00:38] [INFO] [logger_util.py:51] - 开始执行用例：订阅Booking类型
+[2025-08-14 10:00:38] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 10:00:38] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 10:00:38] [INFO] [logger_util.py:59] - 用例 订阅Booking类型 执行成功
+[2025-08-14 10:00:38] [INFO] [logger_util.py:65] - 执行耗时: 0.098 秒
+[2025-08-14 10:00:38] [INFO] [logger_util.py:51] - 开始执行用例：创建Booking物流对象
+[2025-08-14 10:00:38] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 10:00:38] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 10:00:38] [INFO] [logger_util.py:59] - 用例 创建Booking物流对象 执行成功
+[2025-08-14 10:00:38] [INFO] [logger_util.py:65] - 执行耗时: 0.110 秒
+[2025-08-14 10:00:38] [INFO] [logger_util.py:51] - 开始执行用例：订阅Waybill类型
+[2025-08-14 10:00:38] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 10:00:38] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 10:00:38] [INFO] [logger_util.py:59] - 用例 订阅Waybill类型 执行成功
+[2025-08-14 10:00:38] [INFO] [logger_util.py:65] - 执行耗时: 0.136 秒
+[2025-08-14 10:00:38] [INFO] [logger_util.py:51] - 开始执行用例：创建Waybill物流对象
+[2025-08-14 10:00:38] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 10:00:38] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 10:00:38] [INFO] [logger_util.py:59] - 用例 创建Waybill物流对象 执行成功
+[2025-08-14 10:00:38] [INFO] [logger_util.py:65] - 执行耗时: 0.187 秒
+[2025-08-14 10:43:29] [INFO] [requests_util.py:38] - 响应状态码: 200
+[2025-08-14 10:43:29] [DEBUG] [requests_util.py:39] - 响应内容: {"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIweWpYWmVNaDR3WjB5NzRpSjFtTVNIUnRNR3Uta3FFR1RoYWtPVWhMOTh3In0.eyJleHAiOjE3NTUxNzU0MDksImlhdCI6MTc1NTEzOTQwOSwianRpIjoiMWY4ZjU2MWMtNjg0Yy00YWRkLTg5YmItYzNjODFkMzIzMjk2IiwiaXNzIjoiaHR0cDovLzEyMC41NS4xOTUuMTQ0Ojg5ODkvcmVhbG1zL25lb25lIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjBhZTQ5N2YxLTMxYTYtNDZkYi1hMTFhLWU1ZTJkZDFhMmNiNiIsInR5cCI6IkJlYXJlciIsImF6cCI6Im5lb25lLWNsaWVudCIsInNlc3Npb25fc3RhdGUiOiJjNGJkNzMwNy1iY2JmLTRhOTgtYjdiOS01ZjIyZGMyYmJlNGQiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1uZW9uZSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwic2lkIjoiYzRiZDczMDctYmNiZi00YTk4LWI3YjktNWYyMmRjMmJiZTRkIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJsb2dpc3RpY3NfYWdlbnRfdXJpIjoiaHR0cDovLzEyMC41NS4xOTUuMTQ0OjgwODAvbG9naXN0aWNzLW9iamVjdHMvZmQ5NDk3ZjktZDllMS00Y2Y3LTllNTItNzU2NGIwZWI0MmMxIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiaWF0YSJ9.HyuubSrNxThtq72zEFjxdhLAtbO-Uxeas7wEylNgcBglXc3mQS39oPD-odlL45rykPM7jhfy-YqMEIUyKREt8z3E3WpYPirO33n7UFnDsEpCwon9S81r_B2WZHOQIKRd3d-HkVUB9YlDO6R3xAH6yrxayckO1OrGGVqcIBWIAJhkIz0yYzDcOP4eWYXD5L5dF6UbrkfeJa7VwYNbkACE20nwKG95avztEqtVw4mBQyzLF6862K2KPITSavC6cSwOvpSnS_QC_JMO4-7N4hOg0wStmssS1pBIKMxBLRxZsoBid80dQBOCuDqv2rLQSqmNnoBn9YlCiVY5AamgQDY72A","expires_in":36000,"refresh_expires_in":1800,"refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJhNTQ0ZDNiZS00YjFjLTQxMDYtOWU3NS01ODVmMjE2YTQ4N2YifQ.eyJleHAiOjE3NTUxNDEyMDksImlhdCI6MTc1NTEzOTQwOSwianRpIjoiNDViZGJjODEtNTFmYS00ZTNmLWI3YTMtZmE4NGIyM2UzOTQzIiwiaXNzIjoiaHR0cDovLzEyMC41NS4xOTUuMTQ0Ojg5ODkvcmVhbG1zL25lb25lIiwiYXVkIjoiaHR0cDovLzEyMC41NS4xOTUuMTQ0Ojg5ODkvcmVhbG1zL25lb25lIiwic3ViIjoiMGFlNDk3ZjEtMzFhNi00NmRiLWExMWEtZTVlMmRkMWEyY2I2IiwidHlwIjoiUmVmcmVzaCIsImF6cCI6Im5lb25lLWNsaWVudCIsInNlc3Npb25fc3RhdGUiOiJjNGJkNzMwNy1iY2JmLTRhOTgtYjdiOS01ZjIyZGMyYmJlNGQiLCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJzaWQiOiJjNGJkNzMwNy1iY2JmLTRhOTgtYjdiOS01ZjIyZGMyYmJlNGQifQ.gpx6X4Tm2D4VDOlY0CRneCtgBjV5XpuBl-vjugiEnwc","token_type":"Bearer","not-before-policy":0,"session_state":"c4bd7307-bcbf-4a98-b7b9-5f22dc2bbe4d","scope":"profile email"}
+[2025-08-14 10:43:29] [INFO] [requests_util.py:38] - 响应状态码: 200
+[2025-08-14 10:43:29] [DEBUG] [requests_util.py:39] - 响应内容: {"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJiWFV1Y01Gb05qVzZuNWtPZXd3c25EX1ZmYUVFaWVsRXhaNGVQZGJwOUVvIn0.eyJleHAiOjE3NTUxNzU0MTAsImlhdCI6MTc1NTEzOTQxMCwianRpIjoiMTE4MDI5MzYtMjcxMi00ZWIyLWI2ZGUtNzI2MmY2OWEzMDgzIiwiaXNzIjoiaHR0cDovLzQ5LjIzNS4xNjMuMTUzOjg5ODkvcmVhbG1zL25lb25lIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjAzNmM3YjUwLWE5YjItNDBkZi05NWU5LTI4MGMzOTNhOGQyMiIsInR5cCI6IkJlYXJlciIsImF6cCI6Im5lb25lLWNsaWVudCIsInNlc3Npb25fc3RhdGUiOiJjNzcxOTI3ZS01Nzg1LTQ3N2QtOWNkYy1mYzM4Y2UwMzE1YmIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1uZW9uZSIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwic2lkIjoiYzc3MTkyN2UtNTc4NS00NzdkLTljZGMtZmMzOGNlMDMxNWJiIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJsb2dpc3RpY3NfYWdlbnRfdXJpIjoiaHR0cDovLzQ5LjIzNS4xNjMuMTUzOjgwODAvbG9naXN0aWNzLW9iamVjdHMvMGE5NjAzNGYtM2JhYS00Njg4LWJiZTAtOTYwZGQ1YWFhNGVmIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiYWlybGluZSJ9.Wptmntv4g_OpeJjJyUlxItDDUWFIkR_kJYkbPLmqw7wjTCTaTiiRCxIxAnfmtn6XxOPtmSIEbtt7zeJAjoPXgB_AMuT_SC-4TlBlReDz0RaU8NKwjtdDK4fXEaQCw-LwnUuHGLwFqey-yHfYRZhefg-UmgI7cDbBctB3uadu1lpVAPZ2UD_O95spiO_c_hUsd4OQijvSaxQUwrD71ySiAqbv3X_ISNP9_z_Qaglpxylelv5gtJlPqVjwJHAHrTQ67mknIx14JnaueB8M9XAoaEScluxfT3OcYf62M6uVqifGs8EG0BODhQEklSMfK2Bx9NZVdAex7Hd5gFQdLgzJkQ","expires_in":36000,"refresh_expires_in":1800,"refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI3ODg5MDQ5MC1hMjBiLTRjMDYtODdkMy04NjRkZDM0MzgwYTQifQ.eyJleHAiOjE3NTUxNDEyMTAsImlhdCI6MTc1NTEzOTQxMCwianRpIjoiNzkwMjI5MzQtNjRhZi00ZjQzLTlmNjMtOThmMzdjYjMwODU3IiwiaXNzIjoiaHR0cDovLzQ5LjIzNS4xNjMuMTUzOjg5ODkvcmVhbG1zL25lb25lIiwiYXVkIjoiaHR0cDovLzQ5LjIzNS4xNjMuMTUzOjg5ODkvcmVhbG1zL25lb25lIiwic3ViIjoiMDM2YzdiNTAtYTliMi00MGRmLTk1ZTktMjgwYzM5M2E4ZDIyIiwidHlwIjoiUmVmcmVzaCIsImF6cCI6Im5lb25lLWNsaWVudCIsInNlc3Npb25fc3RhdGUiOiJjNzcxOTI3ZS01Nzg1LTQ3N2QtOWNkYy1mYzM4Y2UwMzE1YmIiLCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJzaWQiOiJjNzcxOTI3ZS01Nzg1LTQ3N2QtOWNkYy1mYzM4Y2UwMzE1YmIifQ.DcEWG5JqtB0W_WvZy8llhmdGy0Ur-9USneWt_HsgIR4","token_type":"Bearer","not-before-policy":0,"session_state":"c771927e-5785-477d-9cdc-fc38ce0315bb","scope":"profile email"}
+[2025-08-14 10:43:29] [INFO] [logger_util.py:51] - 开始执行用例：FF访问Airline
+[2025-08-14 10:43:29] [INFO] [requests_util.py:38] - 响应状态码: 200
+[2025-08-14 10:43:29] [DEBUG] [requests_util.py:39] - 响应内容: {
+  "@id" : "http://49.235.163.153:8080/",
+  "@type" : "ServerInformation",
+  "hasDataHolder" : {
+    "@id" : "http://49.235.163.153:8080/logistics-objects/_data-holder"
+  },
+  "hasServerEndpoint" : "http://49.235.163.153:8080/",
+  "hasSupportedContentType" : [ "application/turtle", "application/ld+json", "text/turtle" ],
+  "hasSupportedLanguage" : "en-US",
+  "@context" : {
+    "@vocab" : "https://onerecord.iata.org/ns/api#"
+  }
+}
+[2025-08-14 10:43:29] [INFO] [logger_util.py:59] - 用例 FF访问Airline 执行成功
+[2025-08-14 10:43:29] [INFO] [logger_util.py:65] - 执行耗时: 0.096 秒
+[2025-08-14 10:43:29] [INFO] [logger_util.py:51] - 开始执行用例：Airline访问FF
+[2025-08-14 10:43:29] [INFO] [requests_util.py:38] - 响应状态码: 200
+[2025-08-14 10:43:29] [DEBUG] [requests_util.py:39] - 响应内容: {
+  "@id" : "http://120.55.195.144:8080/",
+  "@type" : "ServerInformation",
+  "hasDataHolder" : {
+    "@id" : "http://120.55.195.144:8080/logistics-objects/_data-holder"
+  },
+  "hasServerEndpoint" : "http://120.55.195.144:8080/",
+  "hasSupportedContentType" : [ "application/turtle", "application/ld+json", "text/turtle" ],
+  "hasSupportedLanguage" : "en-US",
+  "@context" : {
+    "@vocab" : "https://onerecord.iata.org/ns/api#"
+  }
+}
+[2025-08-14 10:43:29] [INFO] [logger_util.py:59] - 用例 Airline访问FF 执行成功
+[2025-08-14 10:43:29] [INFO] [logger_util.py:65] - 执行耗时: 0.092 秒
+[2025-08-14 10:43:29] [INFO] [logger_util.py:51] - 开始执行用例：创建BookingShipment物流对象
+[2025-08-14 10:43:29] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 10:43:29] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 10:43:29] [INFO] [logger_util.py:59] - 用例 创建BookingShipment物流对象 执行成功
+[2025-08-14 10:43:29] [INFO] [logger_util.py:65] - 执行耗时: 0.113 秒
+[2025-08-14 10:43:29] [INFO] [logger_util.py:51] - 开始执行用例：订阅BookingOptionRequest类型
+[2025-08-14 10:43:29] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 10:43:29] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 10:43:29] [INFO] [logger_util.py:59] - 用例 订阅BookingOptionRequest类型 执行成功
+[2025-08-14 10:43:29] [INFO] [logger_util.py:65] - 执行耗时: 0.104 秒
+[2025-08-14 10:43:29] [INFO] [logger_util.py:51] - 开始执行用例：创建BookingOptionRequest物流对象
+[2025-08-14 10:43:29] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 10:43:29] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 10:43:29] [INFO] [logger_util.py:59] - 用例 创建BookingOptionRequest物流对象 执行成功
+[2025-08-14 10:43:29] [INFO] [logger_util.py:65] - 执行耗时: 0.143 秒
+[2025-08-14 10:43:29] [INFO] [logger_util.py:51] - 开始执行用例：订阅BookingOption类型
+[2025-08-14 10:43:30] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 10:43:30] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 10:43:30] [INFO] [logger_util.py:59] - 用例 订阅BookingOption类型 执行成功
+[2025-08-14 10:43:30] [INFO] [logger_util.py:65] - 执行耗时: 0.095 秒
+[2025-08-14 10:43:30] [INFO] [logger_util.py:51] - 开始执行用例：创建BookingOption物流对象
+[2025-08-14 10:43:30] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 10:43:30] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 10:43:30] [INFO] [logger_util.py:59] - 用例 创建BookingOption物流对象 执行成功
+[2025-08-14 10:43:30] [INFO] [logger_util.py:65] - 执行耗时: 0.115 秒
+[2025-08-14 10:43:30] [INFO] [logger_util.py:51] - 开始执行用例：FF查看BookingOption
+[2025-08-14 10:43:30] [INFO] [requests_util.py:38] - 响应状态码: 403
+[2025-08-14 10:43:30] [DEBUG] [requests_util.py:39] - 响应内容: {
+  "@graph" : [ {
+    "@id" : "neone:2dd4396e-344b-46af-a448-90627b9d1544",
+    "@type" : "Error",
+    "hasErrorDetail" : {
+      "@id" : "neone:ee658945-aac3-4b11-86c3-ddaf2c55d993"
+    },
+    "hasTitle" : "Access Denied"
+  }, {
+    "@id" : "neone:ee658945-aac3-4b11-86c3-ddaf2c55d993",
+    "@type" : "ErrorDetail",
+    "hasCode" : "Forbidden",
+    "hasMessage" : "http://120.55.195.144:8080/logistics-objects/fd9497f9-d9e1-4cf7-9e52-7564b0eb42c1 has no access to http://49.235.163.153:8080/logistics-objects/b6c06d68-ade1-442e-a993-765c0ba00312"
+  } ],
+  "@context" : {
+    "@vocab" : "https://onerecord.iata.org/ns/api#"
+  }
+}
+[2025-08-14 10:43:30] [INFO] [logger_util.py:59] - 用例 FF查看BookingOption 执行成功
+[2025-08-14 10:43:30] [INFO] [logger_util.py:65] - 执行耗时: 0.100 秒
+[2025-08-14 10:43:30] [INFO] [logger_util.py:51] - 开始执行用例：向Airline申请权限查看BookingOption
+[2025-08-14 10:43:30] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 10:43:30] [DEBUG] [requests_util.py:39] - 响应内容: Request for access delegation was successful
+[2025-08-14 10:43:30] [INFO] [logger_util.py:59] - 用例 向Airline申请权限查看BookingOption 执行成功
+[2025-08-14 10:43:30] [INFO] [logger_util.py:65] - 执行耗时: 0.099 秒
+[2025-08-14 10:43:30] [INFO] [logger_util.py:51] - 开始执行用例：FF查看授权statue
+[2025-08-14 10:43:30] [INFO] [requests_util.py:38] - 响应状态码: 200
+[2025-08-14 10:43:30] [DEBUG] [requests_util.py:39] - 响应内容: {
+  "@graph" : [ {
+    "@id" : "http://49.235.163.153:8080/action-requests/a48ff8f3-d07a-4a9a-ac83-51662d92bee6",
+    "@type" : "https://onerecord.iata.org/ns/api#AccessDelegationRequest",
+    "https://onerecord.iata.org/ns/api#hasAccessDelegation" : {
+      "@id" : "neone:52618c8c-adf1-4636-850d-36669387f6e3"
+    },
+    "https://onerecord.iata.org/ns/api#hasRequestStatus" : {
+      "@id" : "https://onerecord.iata.org/ns/api#REQUEST_PENDING"
+    },
+    "https://onerecord.iata.org/ns/api#isRequestedAt" : {
+      "@type" : "xsd:dateTime",
+      "@value" : "2025-08-14T02:43:31.055701222Z"
+    },
+    "https://onerecord.iata.org/ns/api#isRequestedBy" : {
+      "@id" : "http://120.55.195.144:8080/logistics-objects/fd9497f9-d9e1-4cf7-9e52-7564b0eb42c1"
+    }
+  }, {
+    "@id" : "neone:52618c8c-adf1-4636-850d-36669387f6e3",
+    "@type" : "https://onerecord.iata.org/ns/api#AccessDelegation",
+    "https://onerecord.iata.org/ns/api#hasDescription" : "Require access to Piece for handling",
+    "https://onerecord.iata.org/ns/api#hasLogisticsObject" : {
+      "@id" : "http://49.235.163.153:8080/logistics-objects/b6c06d68-ade1-442e-a993-765c0ba00312"
+    },
+    "https://onerecord.iata.org/ns/api#hasPermission" : {
+      "@id" : "https://onerecord.iata.org/ns/api#GET_LOGISTICS_OBJECT"
+    },
+    "https://onerecord.iata.org/ns/api#isRequestedFor" : {
+      "@id" : "http://120.55.195.144:8080/logistics-objects/fd9497f9-d9e1-4cf7-9e52-7564b0eb42c1"
+    },
+    "https://onerecord.iata.org/ns/api#notifyRequestStatusChange" : {
+      "@type" : "xsd:boolean",
+      "@value" : "false"
+    }
+  } ],
+  "@context" : {
+    "xsd" : "http://www.w3.org/2001/XMLSchema#"
+  }
+}
+[2025-08-14 10:43:30] [INFO] [logger_util.py:59] - 用例 FF查看授权statue 执行成功
+[2025-08-14 10:43:30] [INFO] [logger_util.py:65] - 执行耗时: 0.099 秒
+[2025-08-14 10:43:30] [INFO] [logger_util.py:51] - 开始执行用例：FF查看BookingOption
+[2025-08-14 10:43:30] [INFO] [requests_util.py:38] - 响应状态码: 403
+[2025-08-14 10:43:30] [DEBUG] [requests_util.py:39] - 响应内容: {
+  "@graph" : [ {
+    "@id" : "neone:03a8b5cc-4a4d-4a85-bb5b-726c7bbe396a",
+    "@type" : "ErrorDetail",
+    "hasCode" : "Forbidden",
+    "hasMessage" : "http://120.55.195.144:8080/logistics-objects/fd9497f9-d9e1-4cf7-9e52-7564b0eb42c1 has no access to http://49.235.163.153:8080/logistics-objects/b6c06d68-ade1-442e-a993-765c0ba00312"
+  }, {
+    "@id" : "neone:782750bf-6072-489d-8167-d2bb5a607b4f",
+    "@type" : "Error",
+    "hasErrorDetail" : {
+      "@id" : "neone:03a8b5cc-4a4d-4a85-bb5b-726c7bbe396a"
+    },
+    "hasTitle" : "Access Denied"
+  } ],
+  "@context" : {
+    "@vocab" : "https://onerecord.iata.org/ns/api#"
+  }
+}
+[2025-08-14 10:43:30] [INFO] [logger_util.py:65] - 执行耗时: 0.084 秒
+[2025-08-14 10:43:30] [INFO] [logger_util.py:51] - 开始执行用例：订阅BookingRequest类型
+[2025-08-14 10:43:30] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 10:43:30] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 10:43:30] [INFO] [logger_util.py:59] - 用例 订阅BookingRequest类型 执行成功
+[2025-08-14 10:43:30] [INFO] [logger_util.py:65] - 执行耗时: 0.095 秒
+[2025-08-14 10:43:30] [INFO] [logger_util.py:51] - 开始执行用例：创建BookingRequest物流对象
+[2025-08-14 10:43:31] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 10:43:31] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 10:43:31] [INFO] [logger_util.py:59] - 用例 创建BookingRequest物流对象 执行成功
+[2025-08-14 10:43:31] [INFO] [logger_util.py:65] - 执行耗时: 0.096 秒
+[2025-08-14 10:43:31] [INFO] [logger_util.py:51] - 开始执行用例：订阅Booking类型
+[2025-08-14 10:43:31] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 10:43:31] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 10:43:31] [INFO] [logger_util.py:59] - 用例 订阅Booking类型 执行成功
+[2025-08-14 10:43:31] [INFO] [logger_util.py:65] - 执行耗时: 0.118 秒
+[2025-08-14 10:43:31] [INFO] [logger_util.py:51] - 开始执行用例：创建Booking物流对象
+[2025-08-14 10:43:31] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 10:43:31] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 10:43:31] [INFO] [logger_util.py:59] - 用例 创建Booking物流对象 执行成功
+[2025-08-14 10:43:31] [INFO] [logger_util.py:65] - 执行耗时: 0.110 秒
+[2025-08-14 10:43:31] [INFO] [logger_util.py:51] - 开始执行用例：订阅Waybill类型
+[2025-08-14 10:43:31] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 10:43:31] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 10:43:31] [INFO] [logger_util.py:59] - 用例 订阅Waybill类型 执行成功
+[2025-08-14 10:43:31] [INFO] [logger_util.py:65] - 执行耗时: 0.110 秒
+[2025-08-14 10:43:31] [INFO] [logger_util.py:51] - 开始执行用例：创建Waybill物流对象
+[2025-08-14 10:43:31] [INFO] [requests_util.py:38] - 响应状态码: 201
+[2025-08-14 10:43:31] [DEBUG] [requests_util.py:39] - 响应内容: 
+[2025-08-14 10:43:31] [INFO] [logger_util.py:59] - 用例 创建Waybill物流对象 执行成功
+[2025-08-14 10:43:31] [INFO] [logger_util.py:65] - 执行耗时: 0.160 秒

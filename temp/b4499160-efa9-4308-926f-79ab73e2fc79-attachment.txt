@@ -1,0 +1,43 @@
+INFO     BD.log:logger_util.py:51 开始执行用例：FF查看授权statue
+INFO     BD.log:requests_util.py:38 响应状态码: 200
+DEBUG    BD.log:requests_util.py:39 响应内容: {
+  "@graph" : [ {
+    "@id" : "http://49.235.163.153:8080/action-requests/9b4174f8-ab35-4443-8b9f-22a742db93fb",
+    "@type" : "https://onerecord.iata.org/ns/api#AccessDelegationRequest",
+    "https://onerecord.iata.org/ns/api#hasAccessDelegation" : {
+      "@id" : "neone:1c6e4035-6606-42dd-bf5e-808ca3e0a75a"
+    },
+    "https://onerecord.iata.org/ns/api#hasRequestStatus" : {
+      "@id" : "https://onerecord.iata.org/ns/api#REQUEST_PENDING"
+    },
+    "https://onerecord.iata.org/ns/api#isRequestedAt" : {
+      "@type" : "xsd:dateTime",
+      "@value" : "2025-08-13T11:23:32.211651092Z"
+    },
+    "https://onerecord.iata.org/ns/api#isRequestedBy" : {
+      "@id" : "http://120.55.195.144:8080/logistics-objects/fd9497f9-d9e1-4cf7-9e52-7564b0eb42c1"
+    }
+  }, {
+    "@id" : "neone:1c6e4035-6606-42dd-bf5e-808ca3e0a75a",
+    "@type" : "https://onerecord.iata.org/ns/api#AccessDelegation",
+    "https://onerecord.iata.org/ns/api#hasDescription" : "Require access to Piece for handling",
+    "https://onerecord.iata.org/ns/api#hasLogisticsObject" : {
+      "@id" : "http://49.235.163.153:8080/logistics-objects/296cff8a-220c-460b-b750-42d3d0a3b86e"
+    },
+    "https://onerecord.iata.org/ns/api#hasPermission" : {
+      "@id" : "https://onerecord.iata.org/ns/api#GET_LOGISTICS_OBJECT"
+    },
+    "https://onerecord.iata.org/ns/api#isRequestedFor" : {
+      "@id" : "http://120.55.195.144:8080/logistics-objects/fd9497f9-d9e1-4cf7-9e52-7564b0eb42c1"
+    },
+    "https://onerecord.iata.org/ns/api#notifyRequestStatusChange" : {
+      "@type" : "xsd:boolean",
+      "@value" : "false"
+    }
+  } ],
+  "@context" : {
+    "xsd" : "http://www.w3.org/2001/XMLSchema#"
+  }
+}
+INFO     BD.log:logger_util.py:59 用例 FF查看授权statue 执行成功
+INFO     BD.log:logger_util.py:65 执行耗时: 0.114 秒

@@ -1,0 +1,363 @@
+#-
+#  name: 创建FF
+#  token_key: FF_token
+#  request:
+#    method: post
+#    url: http://120.55.195.144:8080/logistics-objects?public=<boolean>
+#    data:
+#      '@context':
+#        cargo: https://onerecord.iata.org/ns/cargo#
+#      '@type':
+#        - cargo:Company
+#        - cargo:Organization
+#        - cargo:LogisticsAgent
+#        - cargo:LogisticsObject
+#      cargo:contactPersons:
+#        - '@type':
+#            - cargo:Person
+#            - cargo:Actor
+#            - cargo:LogisticsAgent
+#            - cargo:LogisticsObject
+#          cargo:firstName: Jackie
+#          cargo:lastName: ZUO
+#          cargo:salutation: Mr
+#      cargo:name: IATA
+#      cargo:shortName: IATA
+#    headers:
+#      Accept: application/ld+json
+#      Content-Type: application/ld+json
+#  validate:
+#    status_code: 201
+#
+#-
+#  name: 创建Airline
+#  token_key: Airline_token
+#  request:
+#    method: post
+#    url: http://49.235.163.153:8080/logistics-objects?public=<boolean>
+#    data:
+#      '@context':
+#        cargo: https://onerecord.iata.org/ns/cargo#
+#      '@type':
+#        - cargo:Company
+#        - cargo:Organization
+#        - cargo:LogisticsAgent
+#        - cargo:LogisticsObject
+#      cargo:contactPersons:
+#        - '@type':
+#            - cargo:Person
+#            - cargo:Actor
+#            - cargo:LogisticsAgent
+#            - cargo:LogisticsObject
+#          cargo:firstName: Jackie
+#          cargo:lastName: ZUO
+#          cargo:salutation: Mr
+#      cargo:name: IATA
+#      cargo:shortName: IATA
+#    headers:
+#      Accept: application/ld+json
+#      Content-Type: application/ld+json
+#  validate:
+#    status_code: 201
+
+-
+  name: FF访问Airline
+  token_key: FF_token
+  request:
+    method: get
+    url: http://49.235.163.153:8080
+    headers:
+      Content-Type: application/ld+json
+  validate:
+    status_code: 200
+
+-
+  name: Airline访问FF
+  token_key: Airline_token
+  request:
+    method: get
+    url: http://120.55.195.144:8080
+    headers:
+      Content-Type: application/ld+json
+  validate:
+    status_code: 200
+-
+  name: 创建BookingShipment物流对象
+  token_key: FF_token
+  request:
+    method: post
+    url: http://120.55.195.144:8080/logistics-objects?public=<boolean>
+    data: BookingShipment.json
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 201
+
+-
+  name: 订阅BookingOptionRequest类型
+  token_key: Airline_token
+  request:
+    method: post
+    url: http://120.55.195.144:8080/subscriptions
+    data:
+      '@context':
+        api: https://onerecord.iata.org/ns/api#
+        cargo: https://onerecord.iata.org/ns/cargo#
+      '@type': api:Subscription
+      api:hasContentType: application/ld+json
+      api:hasSubscriber:
+        '@id': http://49.235.163.153:8080/logistics-objects/7a270136-cd6d-442a-a988-c2c4c793675e
+      api:hasTopic:
+        '@id': cargo:BookingOptionRequest
+      api:hasTopicType:
+        '@id': api:LOGISTICS_OBJECT_TYPE
+      api:includeSubscriptionEventType:
+        - '@id': api:LOGISTICS_OBJECT_UPDATED
+        - '@id': api:LOGISTICS_OBJECT_CREATED
+        - '@id': api:LOGISTICS_EVENT_RECEIVED
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 201
+
+-
+  name: 创建BookingOptionRequest物流对象
+  token_key: FF_token
+  request:
+    method: post
+    url: http://120.55.195.144:8080/logistics-objects?public=<boolean>
+    data: BookingOptionRequest.json
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 201
+
+-
+  name: 订阅BookingOption类型
+  token_key: FF_token
+  request:
+    method: post
+    url: http://49.235.163.153:8080/subscriptions
+    data:
+      '@context':
+        api: https://onerecord.iata.org/ns/api#
+        cargo: https://onerecord.iata.org/ns/cargo#
+      '@type': api:Subscription
+      api:hasContentType: application/ld+json
+      api:hasSubscriber:
+        '@id': http://120.55.195.144:8080/logistics-objects/7a270136-cd6d-442a-a988-c2c4c793675e
+      api:hasTopic:
+        '@id': cargo:BookingOption
+      api:hasTopicType:
+        '@id': api:LOGISTICS_OBJECT_TYPE
+      api:includeSubscriptionEventType:
+        - '@id': api:LOGISTICS_OBJECT_UPDATED
+        - '@id': api:LOGISTICS_OBJECT_CREATED
+        - '@id': api:LOGISTICS_EVENT_RECEIVED
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 201
+
+-
+  name: 创建BookingOption物流对象
+  token_key: Airline_token
+  request:
+    method: post
+    url: http://49.235.163.153:8080/logistics-objects?public=false
+    data: BookingOption.json
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 201
+
+-
+  name: FF查看BookingOption
+  token_key: FF_token
+  request:
+    method: get
+    url: ${BookingOption}
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 403
+
+-
+  name: 向Airline申请权限查看BookingOption
+  token_key: FF_token
+  request:
+    method: post
+    url: http://49.235.163.153:8080/access-delegations
+    data:
+      '@context':
+        api: https://onerecord.iata.org/ns/api#
+        cargo: https://onerecord.iata.org/ns/cargo#
+      '@type': api:AccessDelegation
+      api:hasDescription: Require access to Piece for handling
+      api:hasLogisticsObject:
+        - '@id': ${BookingOption}
+      api:hasPermission:
+        - '@id': api:GET_LOGISTICS_OBJECT
+      api:isRequestedFor:
+        - '@id': http://120.55.195.144:8080/logistics-objects/fd9497f9-d9e1-4cf7-9e52-7564b0eb42c1
+      api:notifyRequestStatusChange: false
+
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 201
+
+-
+  name: FF查看授权statue
+  token_key: FF_token
+  request:
+    method: get
+    url: ${AirlineBookingOption}
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  wait: 0
+  validate:
+    status_code: 200
+
+-
+  name: FF查看BookingOption
+  token_key: FF_token
+  request:
+    method: get
+    url: ${BookingOption}
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  wait: 0
+  validate:
+    status_code: 200
+-
+  name: 订阅BookingRequest类型
+  token_key: Airline_token
+  request:
+    method: post
+    url: http://120.55.195.144:8080/subscriptions
+    data:
+      '@context':
+        api: https://onerecord.iata.org/ns/api#
+        cargo: https://onerecord.iata.org/ns/cargo#
+      '@type': api:Subscription
+      api:hasContentType: application/ld+json
+      api:hasSubscriber:
+        '@id': http://49.235.163.153:8080/logistics-objects/0a96034f-3baa-4688-bbe0-960dd5aaa4ef
+      api:hasTopic:
+        '@id': cargo:BookingRequest
+      api:hasTopicType:
+        '@id': api:LOGISTICS_OBJECT_TYPE
+      api:includeSubscriptionEventType:
+        - '@id': api:LOGISTICS_OBJECT_UPDATED
+        - '@id': api:LOGISTICS_OBJECT_CREATED
+        - '@id': api:LOGISTICS_EVENT_RECEIVED
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 201
+
+-
+  name: 创建BookingRequest物流对象
+  token_key: Airline_token
+  request:
+    method: post
+    url: http://49.235.163.153:8080/logistics-objects?public=<boolean>
+    data: BookingRequest.json
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 201
+
+-
+  name: 订阅Booking类型
+  token_key: FF_token
+  request:
+    method: post
+    url: http://49.235.163.153:8080/subscriptions
+    data:
+      '@context':
+        api: https://onerecord.iata.org/ns/api#
+        cargo: https://onerecord.iata.org/ns/cargo#
+      '@type': api:Subscription
+      api:hasContentType: application/ld+json
+      api:hasSubscriber:
+        '@id': http://120.55.195.144:8080/logistics-objects/fd9497f9-d9e1-4cf7-9e52-7564b0eb42c1
+      api:hasTopic:
+        '@id': cargo:Booking
+      api:hasTopicType:
+        '@id': api:LOGISTICS_OBJECT_TYPE
+      api:includeSubscriptionEventType:
+        - '@id': api:LOGISTICS_OBJECT_UPDATED
+        - '@id': api:LOGISTICS_OBJECT_CREATED
+        - '@id': api:LOGISTICS_EVENT_RECEIVED
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 201
+
+-
+  name: 创建Booking物流对象
+  token_key: Airline_token
+  request:
+    method: post
+    url: http://49.235.163.153:8080/logistics-objects?public=<boolean>
+    data: Booking.json
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 201
+
+-
+  name: 订阅Waybill类型
+  token_key: FF_token
+  request:
+    method: post
+    url: http://120.55.195.144:8080/subscriptions
+    data:
+      '@context':
+        api: https://onerecord.iata.org/ns/api#
+        cargo: https://onerecord.iata.org/ns/cargo#
+      '@type': api:Subscription
+      api:hasContentType: application/ld+json
+      api:hasSubscriber:
+        '@id': http://49.235.163.153:8080/logistics-objects/0a96034f-3baa-4688-bbe0-960dd5aaa4ef
+      api:hasTopic:
+        '@id': cargo:Waybill
+      api:hasTopicType:
+        '@id': api:LOGISTICS_OBJECT_TYPE
+      api:includeSubscriptionEventType:
+        - '@id': api:LOGISTICS_OBJECT_UPDATED
+        - '@id': api:LOGISTICS_OBJECT_CREATED
+        - '@id': api:LOGISTICS_EVENT_RECEIVED
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 201
+
+-
+  name: 创建Waybill物流对象
+  token_key: FF_token
+  request:
+    method: post
+    url: http://120.55.195.144:8080/logistics-objects?public=<boolean>
+    data: FWB.json
+    headers:
+      Accept: application/ld+json
+      Content-Type: application/ld+json
+  validate:
+    status_code: 201

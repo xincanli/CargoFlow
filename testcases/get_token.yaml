@@ -1,0 +1,31 @@
+-
+  name: FF_token
+  request:
+    method: post
+    url: http://120.55.195.144:8989/realms/neone/protocol/openid-connect/token
+    data:
+        grant_type: password
+        client_id: neone-client
+        client_secret: lx7ThS5aYggdsMm42BP3wMrVqKm9WpNY
+        username: iata
+        password: iata
+    headers:
+        Content-Type: application/x-www-form-urlencoded
+  validate:
+    status_code: 200
+
+-
+  name: Airline_token
+  request:
+    method: post
+    url: http://49.235.163.153:8989/realms/neone/protocol/openid-connect/token
+    data:
+        grant_type: password
+        client_id: neone-client
+        client_secret: lx7ThS5aYggdsMm42BP3wMrVqKm9WpNY
+        username: airline
+        password: airline
+    headers:
+        Content-Type: application/x-www-form-urlencoded
+  validate:
+    status_code: 200
